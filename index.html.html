@@ -1,0 +1,2905 @@
+<!DOCTYPE html>
+<html lang="es-PE"><head>
+<meta charset="UTF-8"><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"NRBR-8547a290c864571ffcc","applicationID":"93979317","transactionName":"bgQDMEcFXkJZBkYNWldOJxFbB0RYVwsdBUVJTwwNUQBcVE8EQAEbWA8ACEwQWVJLX3MKVFUYFQ1WF31YXAFeAUJYEwQ=","queueTime":0,"applicationTime":258,"agent":""};
+(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"NRBR-8547a290c864571ffcc",applicationID:"93979317",browserID:"1834886802"};;/*! For license information please see nr-loader-rum-1.315.0.min.js.LICENSE.txt */
+(()=>{var e,t,r={163:(e,t,r)=>{"use strict";r.d(t,{j:()=>T});var n=r(384),i=r(1741);var s=r(2555);r(860).K7.genericEvents;const o="experimental.resources",a="register",c=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var u=r(2614),d=r(944),l=r(8122);const f="[data-nr-mask]",g=e=>(0,l.a)(e,(()=>{const e={feature_flags:[],experimental:{register:!1,resources:!1},mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{ajax:{deny_list:void 0,block_internal:!0,enabled:!0,autoStart:!0},api:{register:{get enabled(){return e.feature_flags.includes(a)||e.experimental.register},set enabled(t){e.experimental.register=t},duplicate_data_to_container:!1}},browser_consent_mode:{enabled:!1},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},get feature_flags(){return e.feature_flags},set feature_flags(t){e.feature_flags=t},generic_events:{enabled:!0,autoStart:!0},harvest:{interval:30},jserrors:{enabled:!0,autoStart:!0},logging:{enabled:!0,autoStart:!0},metrics:{enabled:!0,autoStart:!0},obfuscate:void 0,page_action:{enabled:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,autoStart:!0},performance:{capture_marks:!1,capture_measures:!1,capture_detail:!0,resources:{get enabled(){return e.feature_flags.includes(o)||e.experimental.resources},set enabled(t){e.experimental.resources=t},asset_types:[],first_party_domains:[],ignore_newrelic:!0}},privacy:{cookies_enabled:!0},proxy:{assets:void 0,beacon:void 0},session:{expiresMs:u.wk,inactiveMs:u.BB},session_replay:{autoStart:!0,enabled:!1,preload:!1,sampling_rate:10,error_sampling_rate:100,collect_fonts:!1,inline_images:!1,fix_stylesheets:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){c(t)?e.mask_selector="".concat(t,",").concat(f):""===t||null===t?e.mask_selector=f:(0,d.R)(5,t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){c(t)?e.block_selector+=",".concat(t):""!==t&&(0,d.R)(6,t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,d.R)(7,t)}},session_trace:{enabled:!0,autoStart:!0},soft_navigations:{enabled:!0,autoStart:!0},ssl:void 0,user_actions:{enabled:!0,elementAttributes:["id","className","tagName","type"]}}})());var p=r(6154),m=r(9324);let h=0;const v={buildEnv:m.F3,distMethod:m.Xs,version:m.xv,originTime:p.WN},b={consented:!1},y={activatedFeatures:void 0,appMetadata:{},configured:!1,get consented(){return this.session?.state?.consent||b.consented},set consented(e){b.consented=e},customTransaction:void 0,denyList:[],disabled:!1,drainRegistry:new Map,harvester:void 0,isolatedBacklog:!1,isRecording:!1,loaderType:void 0,maxBytes:3e4,obfuscator:void 0,onerror:void 0,ptid:void 0,releaseIds:{},session:void 0,timeKeeper:void 0,registeredEntities:[],jsAttributesMetadata:{bytes:0},get harvestCount(){return++h}},_=e=>{const t=(0,l.a)(e,y),r=Object.keys(v).reduce((e,t)=>(e[t]={value:v[t],writable:!1,configurable:!0,enumerable:!0},e),{});return Object.defineProperties(t,r)},w=e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e};var x=r(7836),R=r(3241);const k={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},A=e=>(0,l.a)(e,k);function T(e,t={},r,o){let{init:a,info:c,loader_config:u,runtime:d={},exposed:l=!0}=t;if(!c){const e=(0,n.pV)();a=e.init,c=e.info,u=e.loader_config}e.init=g(a||{}),e.loader_config=A(u||{}),c.jsAttributes??={},p.bv&&(c.jsAttributes.isWorker=!0),e.info=(0,s.D)(c);const f=e.init;e.runtime??=_(d),f.proxy.assets&&w(f.proxy.assets),e.runtime.configured||(Object.defineProperty(e,"beacons",{get:()=>[e.info.beacon,e.info.errorBeacon,e.init.proxy.assets,e.init.proxy.beacon].filter(Boolean)}),Object.defineProperty(e.runtime,"denyList",{get:()=>[...e.init.ajax.deny_list||[],...e.init.ajax.block_internal?e.beacons:[]]}),e.runtime.ptid=e.agentIdentifier,function(e){const t=(0,n.pV)();Object.getOwnPropertyNames(i.W.prototype).forEach(r=>{const n=i.W.prototype[r];if("function"!=typeof n||"constructor"===n)return;let s=t[r];e[r]&&!1!==e.exposed&&"micro-agent"!==e.runtime?.loaderType&&(t[r]=(...t)=>{const n=e[r](...t);return s?s(...t):n})})}(e),e.runtime.loaderType=r,e.ee=x.ee.get(e.agentIdentifier),e.exposed=l,(0,R.W)({drained:!!e.runtime.activatedFeatures,type:"lifecycle",name:"initialize",feature:void 0,data:e.config}),e.runtime.configured=!0)}},384:(e,t,r)=>{"use strict";r.d(t,{NT:()=>a,Zm:()=>c,bQ:()=>d,dV:()=>u,pV:()=>l});var n=r(6154),i=r(1863),s=r(944),o=r(1910);const a={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function c(){return n.gm.NREUM||(n.gm.NREUM={}),void 0===n.gm.newrelic&&(n.gm.newrelic=n.gm.NREUM),n.gm.NREUM}function u(){let e=c();return e.o||(e.o={ST:n.gm.setTimeout,SI:n.gm.setImmediate||n.gm.setInterval,CT:n.gm.clearTimeout,XHR:n.gm.XMLHttpRequest,REQ:n.gm.Request,EV:n.gm.Event,PR:n.gm.Promise,MO:n.gm.MutationObserver,FETCH:n.gm.fetch,WS:n.gm.WebSocket},(0,o.i)(...Object.values(e.o))),e}function d(e,t){let r=c();r.initializedAgents??={},t.initializedAt={ms:(0,i.t)(),date:new Date},r.initializedAgents[e]=t,2===Object.keys(r.initializedAgents).length&&(0,s.R)(69)}function l(){return function(){let e=c();const t=e.info||{};e.info={beacon:a.beacon,errorBeacon:a.errorBeacon,...t}}(),function(){let e=c();const t=e.init||{};e.init={...t}}(),u(),function(){let e=c();const t=e.loader_config||{};e.loader_config={...t}}(),c()}},782:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.pageViewTiming},860:(e,t,r)=>{"use strict";r.d(t,{$J:()=>d,K7:()=>c,P3:()=>u,XX:()=>i,Yy:()=>a,df:()=>s,qY:()=>n,v4:()=>o});const n="events",i="jserrors",s="browser/blobs",o="rum",a="browser/logs",c={ajax:"ajax",genericEvents:"generic_events",jserrors:i,logging:"logging",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",softNav:"soft_navigations"},u={[c.pageViewEvent]:1,[c.pageViewTiming]:2,[c.metrics]:3,[c.jserrors]:4,[c.softNav]:5,[c.ajax]:6,[c.sessionTrace]:7,[c.sessionReplay]:8,[c.logging]:9,[c.genericEvents]:10},d={[c.pageViewEvent]:o,[c.pageViewTiming]:n,[c.ajax]:n,[c.softNav]:n,[c.metrics]:i,[c.jserrors]:i,[c.sessionTrace]:s,[c.sessionReplay]:s,[c.logging]:a,[c.genericEvents]:"ins"}},944:(e,t,r)=>{"use strict";r.d(t,{R:()=>i});var n=r(3241);function i(e,t){"function"==typeof console.debug&&(console.debug("New Relic Warning: https://github.com/newrelic/newrelic-browser-agent/blob/main/docs/warning-codes.md#".concat(e),t),(0,n.W)({drained:null,type:"data",name:"warn",feature:"warn",data:{code:e,secondary:t}}))}},1687:(e,t,r)=>{"use strict";r.d(t,{Ak:()=>a,Ze:()=>u,x3:()=>c});var n=r(3241),i=r(3606),s=r(860),o=r(2646);function a(e,t){if(!e)return;const r={staged:!1,priority:s.P3[t]||0};e.runtime.drainRegistry.get(t)||e.runtime.drainRegistry.set(t,r)}function c(e,t){if(!e)return;const r=e.runtime.drainRegistry;r&&(r.get(t)&&r.delete(t),l(e,t,!1),r.size&&d(e))}function u(e,t="feature",r=!1){if(e){if(!e.runtime.drainRegistry.get(t)||r)return l(e,t);e.runtime.drainRegistry.get(t).staged=!0,d(e)}}function d(e){if(!e)return;const t=Array.from(e.runtime.drainRegistry);t.every(([e,t])=>t.staged)&&(t.sort((e,t)=>e[1].priority-t[1].priority),t.forEach(([t])=>{e.runtime.drainRegistry.delete(t),l(e,t)}))}function l(e,t,r=!0){if(!e)return;const s=e.ee,a=i.i.handlers;if(s&&!s.aborted&&s.backlog&&a){if((0,n.W)({type:"lifecycle",name:"drain",feature:t}),r){const e=s.backlog[t],r=a[t];if(r){for(let t=0;e&&t<e.length;++t)f(e[t],r);Object.entries(r).forEach(([e,t])=>{Object.values(t||{}).forEach(t=>{t[0]?.on&&t[0].context()instanceof o.y&&!t[0].listeners(e).includes(t[1])&&t[0].on(e,t[1])})})}}s.isolatedBacklog||delete a[t],s.backlog[t]=null,s.emit("drain-"+t,[])}}function f(e,t){var r=e[1];Object.values(t[r]||{}).forEach(t=>{var r=e[0];if(t[0]===r){var n=t[1],i=e[3],s=e[2];n.apply(i,s)}})}},1738:(e,t,r)=>{"use strict";r.d(t,{U:()=>f,Y:()=>l});var n=r(3241),i=r(9908),s=r(1863),o=r(944),a=r(3969),c=r(8362),u=r(860),d=r(4261);function l(e,t,r,s){const l=s||r;!l||l[e]&&l[e]!==c.d.prototype[e]||(l[e]=function(){(0,i.p)(a.xV,["API/"+e+"/called"],void 0,u.K7.metrics,r.ee),(0,n.W)({drained:!!r.runtime?.activatedFeatures,type:"data",name:"api",feature:d.Pl+e,data:{}});try{return t.apply(this,arguments)}catch(e){(0,o.R)(23,e)}})}function f(e,t,r,n,o){const a=e.info;null===r?delete a.jsAttributes[t]:a.jsAttributes[t]=r,(o||null===r)&&(0,i.p)(d.Pl+n,[(0,s.t)(),t,r],void 0,"session",e.ee)}},1741:(e,t,r)=>{"use strict";r.d(t,{W:()=>s});var n=r(944),i=r(4261);class s{#e(e,...t){if(this[e]!==s.prototype[e])return this[e](...t);(0,n.R)(35,e)}addPageAction(e,t){return this.#e(i.hG,e,t)}register(e){return this.#e(i.eY,e)}recordCustomEvent(e,t){return this.#e(i.fF,e,t)}setPageViewName(e,t){return this.#e(i.Fw,e,t)}setCustomAttribute(e,t,r){return this.#e(i.cD,e,t,r)}noticeError(e,t){return this.#e(i.o5,e,t)}setUserId(e,t=!1){return this.#e(i.Dl,e,t)}setApplicationVersion(e){return this.#e(i.nb,e)}setErrorHandler(e){return this.#e(i.bt,e)}addRelease(e,t){return this.#e(i.k6,e,t)}log(e,t){return this.#e(i.$9,e,t)}start(){return this.#e(i.d3)}finished(e){return this.#e(i.BL,e)}recordReplay(){return this.#e(i.CH)}pauseReplay(){return this.#e(i.Tb)}addToTrace(e){return this.#e(i.U2,e)}setCurrentRouteName(e){return this.#e(i.PA,e)}interaction(e){return this.#e(i.dT,e)}wrapLogger(e,t,r){return this.#e(i.Wb,e,t,r)}measure(e,t){return this.#e(i.V1,e,t)}consent(e){return this.#e(i.Pv,e)}}},1863:(e,t,r)=>{"use strict";function n(){return Math.floor(performance.now())}r.d(t,{t:()=>n})},1910:(e,t,r)=>{"use strict";r.d(t,{i:()=>s});var n=r(944);const i=new Map;function s(...e){return e.every(e=>{if(i.has(e))return i.get(e);const t="function"==typeof e?e.toString():"",r=t.includes("[native code]"),s=t.includes("nrWrapper");return r||s||(0,n.R)(64,e?.name||t),i.set(e,r),r})}},2555:(e,t,r)=>{"use strict";r.d(t,{D:()=>a,f:()=>o});var n=r(384),i=r(8122);const s={beacon:n.NT.beacon,errorBeacon:n.NT.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0};function o(e){try{return!!e.licenseKey&&!!e.errorBeacon&&!!e.applicationID}catch(e){return!1}}const a=e=>(0,i.a)(e,s)},2614:(e,t,r)=>{"use strict";r.d(t,{BB:()=>o,H3:()=>n,g:()=>u,iL:()=>c,tS:()=>a,uh:()=>i,wk:()=>s});const n="NRBA",i="SESSION",s=144e5,o=18e5,a={STARTED:"session-started",PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},c={SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},u={OFF:0,FULL:1,ERROR:2}},2646:(e,t,r)=>{"use strict";r.d(t,{y:()=>n});class n{constructor(e){this.contextId=e}}},2843:(e,t,r)=>{"use strict";r.d(t,{G:()=>s,u:()=>i});var n=r(3878);function i(e,t=!1,r,i){(0,n.DD)("visibilitychange",function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)},r,i)}function s(e,t,r){(0,n.sp)("pagehide",e,t,r)}},3241:(e,t,r)=>{"use strict";r.d(t,{W:()=>s});var n=r(6154);const i="newrelic";function s(e={}){try{n.gm.dispatchEvent(new CustomEvent(i,{detail:e}))}catch(e){}}},3606:(e,t,r)=>{"use strict";r.d(t,{i:()=>s});var n=r(9908);s.on=o;var i=s.handlers={};function s(e,t,r,s){o(s||n.d,i,e,t,r)}function o(e,t,r,i,s){s||(s="feature"),e||(e=n.d);var o=t[s]=t[s]||{};(o[r]=o[r]||[]).push([e,i])}},3878:(e,t,r)=>{"use strict";function n(e,t){return{capture:e,passive:!1,signal:t}}function i(e,t,r=!1,i){window.addEventListener(e,t,n(r,i))}function s(e,t,r=!1,i){document.addEventListener(e,t,n(r,i))}r.d(t,{DD:()=>s,jT:()=>n,sp:()=>i})},3969:(e,t,r)=>{"use strict";r.d(t,{TZ:()=>n,XG:()=>a,rs:()=>i,xV:()=>o,z_:()=>s});const n=r(860).K7.metrics,i="sm",s="cm",o="storeSupportabilityMetrics",a="storeEventMetrics"},4234:(e,t,r)=>{"use strict";r.d(t,{W:()=>i});var n=r(1687);class i{constructor(e,t){this.agentRef=e,this.ee=e?.ee,this.featureName=t,this.blocked=!1}deregisterDrain(){(0,n.x3)(this.agentRef,this.featureName)}}},4261:(e,t,r)=>{"use strict";r.d(t,{$9:()=>u,BL:()=>a,CH:()=>g,Dl:()=>_,Fw:()=>y,PA:()=>h,Pl:()=>n,Pv:()=>k,Tb:()=>l,U2:()=>s,V1:()=>R,Wb:()=>x,bt:()=>b,cD:()=>v,d3:()=>w,dT:()=>c,eY:()=>p,fF:()=>f,hG:()=>i,k6:()=>o,nb:()=>m,o5:()=>d});const n="api-",i="addPageAction",s="addToTrace",o="addRelease",a="finished",c="interaction",u="log",d="noticeError",l="pauseReplay",f="recordCustomEvent",g="recordReplay",p="register",m="setApplicationVersion",h="setCurrentRouteName",v="setCustomAttribute",b="setErrorHandler",y="setPageViewName",_="setUserId",w="start",x="wrapLogger",R="measure",k="consent"},5289:(e,t,r)=>{"use strict";r.d(t,{GG:()=>o,Qr:()=>c,sB:()=>a});var n=r(3878),i=r(6389);function s(){return"undefined"==typeof document||"complete"===document.readyState}function o(e,t){if(s())return e();const r=(0,i.J)(e),o=setInterval(()=>{s()&&(clearInterval(o),r())},500);(0,n.sp)("load",r,t)}function a(e){if(s())return e();(0,n.DD)("DOMContentLoaded",e)}function c(e){if(s())return e();(0,n.sp)("popstate",e)}},5607:(e,t,r)=>{"use strict";r.d(t,{W:()=>n});const n=(0,r(9566).bz)()},6154:(e,t,r)=>{"use strict";r.d(t,{OF:()=>u,RI:()=>i,WN:()=>l,bv:()=>s,gm:()=>o,m:()=>c,mw:()=>a,sb:()=>d,zk:()=>f});var n=r(1863);const i="undefined"!=typeof window&&!!window.document,s="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),o=i?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),a=Boolean("hidden"===o?.document?.visibilityState),c=""+o?.location,u=/iPad|iPhone|iPod/.test(o.navigator?.userAgent),d=u&&"undefined"==typeof SharedWorker,l=((()=>{const e=o.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Date.now()-(0,n.t)()),f=()=>{const e=o?.performance?.getEntriesByType?.("navigation")?.[0];if(e&&e.responseStart>0&&e.responseStart<o.performance.now())return e}},6389:(e,t,r)=>{"use strict";function n(e,t=500,r={}){const n=r?.leading||!1;let i;return(...r)=>{n&&void 0===i&&(e.apply(this,r),i=setTimeout(()=>{i=clearTimeout(i)},t)),n||(clearTimeout(i),i=setTimeout(()=>{e.apply(this,r)},t))}}function i(e){let t=!1;return(...r)=>{t||(t=!0,e.apply(this,r))}}r.d(t,{J:()=>i,s:()=>n})},6630:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.pageViewEvent},7699:(e,t,r)=>{"use strict";r.d(t,{It:()=>s,KC:()=>a,No:()=>i,qh:()=>o});var n=r(860);const i=16e3,s=1e6,o="SESSION_ERROR",a={[n.K7.logging]:!0,[n.K7.genericEvents]:!0,[n.K7.jserrors]:!0,[n.K7.ajax]:!0}},7836:(e,t,r)=>{"use strict";r.d(t,{P:()=>a,ee:()=>c});var n=r(384),i=r(8990),s=r(2646),o=r(5607);const a="nr@context:".concat(o.W),c=function e(t,r){var n={},o={},d={},l=!1;try{l=16===r.length&&u.initializedAgents?.[r]?.runtime.isolatedBacklog}catch(e){}var f={on:p,addEventListener:p,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,s){!1!==s&&(s=!0);if(c.aborted&&!i)return;t&&s&&t.emit(e,r,n);var a=g(n);m(e).forEach(e=>{e.apply(a,r)});var u=v()[o[e]];u&&u.push([f,e,r,a]);return a},get:h,listeners:m,context:g,buffer:function(e,t){const r=v();if(t=t||"feature",f.aborted)return;Object.entries(e||{}).forEach(([e,n])=>{o[n]=t,t in r||(r[t]=[])})},abort:function(){f._aborted=!0,Object.keys(f.backlog).forEach(e=>{delete f.backlog[e]})},isBuffering:function(e){return!!v()[o[e]]},debugId:r,backlog:l?{}:t&&"object"==typeof t.backlog?t.backlog:{},isolatedBacklog:l};return Object.defineProperty(f,"aborted",{get:()=>{let e=f._aborted||!1;return e||(t&&(e=t.aborted),e)}}),f;function g(e){return e&&e instanceof s.y?e:e?(0,i.I)(e,a,()=>new s.y(a)):new s.y(a)}function p(e,t){n[e]=m(e).concat(t)}function m(e){return n[e]||[]}function h(t){return d[t]=d[t]||e(f,t)}function v(){return f.backlog}}(void 0,"globalEE"),u=(0,n.Zm)();u.ee||(u.ee=c)},8122:(e,t,r)=>{"use strict";r.d(t,{a:()=>i});var n=r(944);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.R)(3);if(!t||"object"!=typeof t)return(0,n.R)(4);const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),s=0===Object.keys(r).length?e:r;for(let o in s)if(void 0!==e[o])try{if(null===e[o]){r[o]=null;continue}Array.isArray(e[o])&&Array.isArray(t[o])?r[o]=Array.from(new Set([...e[o],...t[o]])):e[o]instanceof Map||e[o]instanceof Set||e[o]instanceof Date||e[o]instanceof RegExp?r[o]=e[o]:"object"==typeof e[o]&&"object"==typeof t[o]?r[o]=i(e[o],t[o]):r[o]=e[o]}catch(e){r[o]||(0,n.R)(1,e)}return r}catch(e){(0,n.R)(2,e)}}},8362:(e,t,r)=>{"use strict";r.d(t,{d:()=>s});var n=r(9566),i=r(1741);class s extends i.W{agentIdentifier=(0,n.LA)(16)}},8374:(e,t,r)=>{r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},8990:(e,t,r)=>{"use strict";r.d(t,{I:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},9324:(e,t,r)=>{"use strict";r.d(t,{F3:()=>i,Xs:()=>s,xv:()=>n});const n="1.315.0",i="PROD",s="CDN"},9566:(e,t,r)=>{"use strict";r.d(t,{LA:()=>a,bz:()=>o});var n=r(6154);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function s(e,t){return e?15&e[t]:16*Math.random()|0}function o(){const e=n.gm?.crypto||n.gm?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),i.split("").map(e=>"x"===e?s(t,r++).toString(16):"y"===e?(3&s()|8).toString(16):e).join("")}function a(e){const t=n.gm?.crypto||n.gm?.msCrypto;let r,i=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const o=[];for(var a=0;a<e;a++)o.push(s(r,i++).toString(16));return o.join("")}},9908:(e,t,r)=>{"use strict";r.d(t,{d:()=>n,p:()=>i});var n=r(7836).ee.get("handle");function i(e,t,r,i,s){s?(s.buffer([e],i),s.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var s=n[e]={exports:{}};return r[e](s,s.exports,i),s.exports}i.m=r,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce((t,r)=>(i.f[r](e,t),t),[])),i.u=e=>"nr-rum-1.315.0.min.js",i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.315.0.PROD:",i.l=(r,n,s,o)=>{if(e[r])e[r].push(n);else{var a,c;if(void 0!==s)for(var u=document.getElementsByTagName("script"),d=0;d<u.length;d++){var l=u[d];if(l.getAttribute("src")==r||l.getAttribute("data-webpack")==t+s){a=l;break}}if(!a){c=!0;var f={296:"sha512-ObF9c4QHmo5ftQ6Rqp3BOAyyeC8lNAimyA4lPQTw4Y4IbSHIBgtGnFN8JCGoF4CCCQ+Jy2pTaXkNDUlcCY0Bxg=="};(a=document.createElement("script")).charset="utf-8",i.nc&&a.setAttribute("nonce",i.nc),a.setAttribute("data-webpack",t+s),a.src=r,0!==a.src.indexOf(window.location.origin+"/")&&(a.crossOrigin="anonymous"),f[o]&&(a.integrity=f[o])}e[r]=[n];var g=(t,n)=>{a.onerror=a.onload=null,clearTimeout(p);var i=e[r];if(delete e[r],a.parentNode&&a.parentNode.removeChild(a),i&&i.forEach(e=>e(n)),t)return t(n)},p=setTimeout(g.bind(null,void 0,{type:"timeout",target:a}),12e4);a.onerror=g.bind(null,a.onerror),a.onload=g.bind(null,a.onload),c&&document.head.appendChild(a)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={374:0,840:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var s=new Promise((r,i)=>n=e[t]=[r,i]);r.push(n[2]=s);var o=i.p+i.u(t),a=new Error;i.l(o,r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var s=r&&("load"===r.type?"missing":r.type),o=r&&r.target&&r.target.src;a.message="Loading chunk "+t+" failed: ("+s+": "+o+")",a.name="ChunkLoadError",a.type=s,a.request=o,n[1](a)}},"chunk-"+t,t)}};var t=(t,r)=>{var n,s,[o,a,c]=r,u=0;if(o.some(t=>0!==e[t])){for(n in a)i.o(a,n)&&(i.m[n]=a[n]);if(c)c(i)}for(t&&t(r);u<o.length;u++)s=o[u],i.o(e,s)&&e[s]&&e[s][0](),e[s]=0},r=self["webpackChunk:NRBA-1.315.0.PROD"]=self["webpackChunk:NRBA-1.315.0.PROD"]||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})(),(()=>{"use strict";i(8374);var e=i(8362),t=i(860);const r=Object.values(t.K7);var n=i(163);var s=i(9908),o=i(1863),a=i(4261),c=i(1738);var u=i(1687),d=i(4234),l=i(5289),f=i(6154),g=i(944),p=i(384);const m=e=>f.RI&&!0===e?.privacy.cookies_enabled;function h(e){return!!(0,p.dV)().o.MO&&m(e)&&!0===e?.session_trace.enabled}var v=i(6389),b=i(7699);class y extends d.W{constructor(e,t){super(e,t),this.abortHandler=void 0,this.featAggregate=void 0,this.loadedSuccessfully=void 0,this.onAggregateImported=new Promise(e=>{this.loadedSuccessfully=e}),this.deferred=Promise.resolve(),!1===e.init[this.featureName].autoStart?this.deferred=new Promise((t,r)=>{this.ee.on("manual-start-all",(0,v.J)(()=>{(0,u.Ak)(e,this.featureName),t()}))}):(0,u.Ak)(e,t)}importAggregator(e,t,r={}){if(this.featAggregate)return;const n=async()=>{let n;await this.deferred;try{if(m(e.init)){const{setupAgentSession:t}=await i.e(296).then(i.bind(i,2612));n=t(e)}}catch(e){(0,g.R)(20,e),this.ee.emit("internal-error",[e]),(0,s.p)(b.qh,[e],void 0,this.featureName,this.ee)}try{if(!this.#t(this.featureName,n,e.init))return(0,u.Ze)(this.agentRef,this.featureName),void this.loadedSuccessfully(!1);const{Aggregate:i}=await t();this.featAggregate=new i(e,r),e.runtime.harvester.initializedAggregates.push(this.featAggregate),this.loadedSuccessfully(!0)}catch(e){(0,g.R)(34,e),this.abortHandler?.(),(0,u.Ze)(this.agentRef,this.featureName,!0),this.loadedSuccessfully(!1),this.ee&&this.ee.abort()}};f.RI?(0,l.GG)(()=>n(),!0):n()}#t(e,r,n){if(this.blocked)return!1;switch(e){case t.K7.sessionReplay:return h(n)&&!!r;case t.K7.sessionTrace:return!!r;default:return!0}}}var _=i(6630),w=i(2614),x=i(3241);class R extends y{static featureName=_.T;constructor(e){var t;super(e,_.T),this.setupInspectionEvents(),t=e,(0,c.Y)(a.Fw,function(e,r){"string"==typeof e&&("/"!==e.charAt(0)&&(e="/"+e),t.runtime.customTransaction=(r||"http://custom.transaction")+e,(0,s.p)(a.Pl+a.Fw,[(0,o.t)()],void 0,void 0,t.ee))},t),this.importAggregator(e,()=>i.e(296).then(i.bind(i,146)))}setupInspectionEvents(){const e=(e,t)=>{e&&(0,x.W)({timeStamp:e.timeStamp,loaded:"complete"===e.target.readyState,type:"window",name:t,data:e.target.location+""})};(0,l.sB)(t=>{e(t,"DOMContentLoaded")}),(0,l.GG)(t=>{e(t,"load")}),(0,l.Qr)(t=>{e(t,"navigate")}),this.ee.on(w.tS.UPDATE,(e,t)=>{(0,x.W)({type:"lifecycle",name:"session",data:t})})}}class k extends e.d{constructor(e){var t;(super(),f.gm)?(this.features={},(0,p.bQ)(this.agentIdentifier,this),this.desiredFeatures=new Set(e.features||[]),this.desiredFeatures.add(R),(0,n.j)(this,e,e.loaderType||"agent"),t=this,(0,c.Y)(a.cD,function(e,r,n=!1){if("string"==typeof e){if(["string","number","boolean"].includes(typeof r)||null===r)return(0,c.U)(t,e,r,a.cD,n);(0,g.R)(40,typeof r)}else(0,g.R)(39,typeof e)},t),function(e){(0,c.Y)(a.Dl,function(t,r=!1){if("string"!=typeof t&&null!==t)return void(0,g.R)(41,typeof t);const n=e.info.jsAttributes["enduser.id"];r&&null!=n&&n!==t?(0,s.p)(a.Pl+"setUserIdAndResetSession",[t],void 0,"session",e.ee):(0,c.U)(e,"enduser.id",t,a.Dl,!0)},e)}(this),function(e){(0,c.Y)(a.nb,function(t){if("string"==typeof t||null===t)return(0,c.U)(e,"application.version",t,a.nb,!1);(0,g.R)(42,typeof t)},e)}(this),function(e){(0,c.Y)(a.d3,function(){e.ee.emit("manual-start-all")},e)}(this),function(e){(0,c.Y)(a.Pv,function(t=!0){if("boolean"==typeof t){if((0,s.p)(a.Pl+a.Pv,[t],void 0,"session",e.ee),e.runtime.consented=t,t){const t=e.features.page_view_event;t.onAggregateImported.then(e=>{const r=t.featAggregate;e&&!r.sentRum&&r.sendRum()})}}else(0,g.R)(65,typeof t)},e)}(this),this.run()):(0,g.R)(21)}get config(){return{info:this.info,init:this.init,loader_config:this.loader_config,runtime:this.runtime}}get api(){return this}run(){try{const e=function(e){const t={};return r.forEach(r=>{t[r]=!!e[r]?.enabled}),t}(this.init),n=[...this.desiredFeatures];n.sort((e,r)=>t.P3[e.featureName]-t.P3[r.featureName]),n.forEach(r=>{if(!e[r.featureName]&&r.featureName!==t.K7.pageViewEvent)return;const n=function(e){switch(e){case t.K7.ajax:return[t.K7.jserrors];case t.K7.sessionTrace:return[t.K7.ajax,t.K7.pageViewEvent];case t.K7.sessionReplay:return[t.K7.sessionTrace];case t.K7.pageViewTiming:return[t.K7.pageViewEvent];default:return[]}}(r.featureName).filter(e=>!(e in this.features));n.length>0&&(0,g.R)(36,{targetFeature:r.featureName,missingDependencies:n}),this.features[r.featureName]=new r(this)})}catch(e){(0,g.R)(22,e);for(const e in this.features)this.features[e].abortHandler?.();const t=(0,p.Zm)();delete t.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator;return t.ee.get(this.agentIdentifier).abort(),!1}}}var A=i(2843),T=i(782);class E extends y{static featureName=T.T;constructor(e){super(e,T.T),f.RI&&((0,A.u)(()=>(0,s.p)("docHidden",[(0,o.t)()],void 0,T.T,this.ee),!0),(0,A.G)(()=>(0,s.p)("winPagehide",[(0,o.t)()],void 0,T.T,this.ee)),this.importAggregator(e,()=>i.e(296).then(i.bind(i,2117))))}}var S=i(3969);class j extends y{static featureName=S.TZ;constructor(e){super(e,S.TZ),this.importAggregator(e,()=>i.e(296).then(i.bind(i,9623)))}}new k({features:[R,E,j],loaderType:"lite"})})()})();</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"NRBR-8547a290c864571ffcc","applicationID":"93979317","transactionName":"bgQDMEcFXkJZBkYNWldOJxFbB0RYVwsdBUVJTwwNUQBcVE8EQAEbWA8ACEwQWVJLX3MKVFUYFQ1WF31YXAFeAUJYEwQ=","queueTime":0,"applicationTime":239,"agent":""};
+(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"NRBR-8547a290c864571ffcc",applicationID:"93979317",browserID:"1834886802"};;/*! For license information please see nr-loader-rum-1.314.0.min.js.LICENSE.txt */
+(()=>{var e,t,r={163:(e,t,r)=>{"use strict";r.d(t,{j:()=>T});var n=r(384),i=r(1741);var s=r(2555);r(860).K7.genericEvents;const o="experimental.resources",a="register",c=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var u=r(2614),d=r(944),l=r(8122);const f="[data-nr-mask]",g=e=>(0,l.a)(e,(()=>{const e={feature_flags:[],experimental:{register:!1,resources:!1},mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{ajax:{deny_list:void 0,block_internal:!0,enabled:!0,autoStart:!0},api:{register:{get enabled(){return e.feature_flags.includes(a)||e.experimental.register},set enabled(t){e.experimental.register=t},duplicate_data_to_container:!1}},browser_consent_mode:{enabled:!1},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},get feature_flags(){return e.feature_flags},set feature_flags(t){e.feature_flags=t},generic_events:{enabled:!0,autoStart:!0},harvest:{interval:30},jserrors:{enabled:!0,autoStart:!0},logging:{enabled:!0,autoStart:!0},metrics:{enabled:!0,autoStart:!0},obfuscate:void 0,page_action:{enabled:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,autoStart:!0},performance:{capture_marks:!1,capture_measures:!1,capture_detail:!0,resources:{get enabled(){return e.feature_flags.includes(o)||e.experimental.resources},set enabled(t){e.experimental.resources=t},asset_types:[],first_party_domains:[],ignore_newrelic:!0}},privacy:{cookies_enabled:!0},proxy:{assets:void 0,beacon:void 0},session:{expiresMs:u.wk,inactiveMs:u.BB},session_replay:{autoStart:!0,enabled:!1,preload:!1,sampling_rate:10,error_sampling_rate:100,collect_fonts:!1,inline_images:!1,fix_stylesheets:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){c(t)?e.mask_selector="".concat(t,",").concat(f):""===t||null===t?e.mask_selector=f:(0,d.R)(5,t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){c(t)?e.block_selector+=",".concat(t):""!==t&&(0,d.R)(6,t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,d.R)(7,t)}},session_trace:{enabled:!0,autoStart:!0},soft_navigations:{enabled:!0,autoStart:!0},ssl:void 0,user_actions:{enabled:!0,elementAttributes:["id","className","tagName","type"]}}})());var p=r(6154),m=r(9324);let h=0;const v={buildEnv:m.F3,distMethod:m.Xs,version:m.xv,originTime:p.WN},b={consented:!1},y={activatedFeatures:void 0,appMetadata:{},configured:!1,get consented(){return this.session?.state?.consent||b.consented},set consented(e){b.consented=e},customTransaction:void 0,denyList:[],disabled:!1,drainRegistry:new Map,harvester:void 0,isolatedBacklog:!1,isRecording:!1,loaderType:void 0,maxBytes:3e4,obfuscator:void 0,onerror:void 0,ptid:void 0,releaseIds:{},session:void 0,timeKeeper:void 0,registeredEntities:[],jsAttributesMetadata:{bytes:0},get harvestCount(){return++h}},_=e=>{const t=(0,l.a)(e,y),r=Object.keys(v).reduce((e,t)=>(e[t]={value:v[t],writable:!1,configurable:!0,enumerable:!0},e),{});return Object.defineProperties(t,r)},w=e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e};var x=r(7836),R=r(3241);const k={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},A=e=>(0,l.a)(e,k);function T(e,t={},r,o){let{init:a,info:c,loader_config:u,runtime:d={},exposed:l=!0}=t;if(!c){const e=(0,n.pV)();a=e.init,c=e.info,u=e.loader_config}e.init=g(a||{}),e.loader_config=A(u||{}),c.jsAttributes??={},p.bv&&(c.jsAttributes.isWorker=!0),e.info=(0,s.D)(c);const f=e.init;e.runtime??=_(d),f.proxy.assets&&w(f.proxy.assets),e.runtime.configured||(Object.defineProperty(e,"beacons",{get:()=>[e.info.beacon,e.info.errorBeacon,e.init.proxy.assets,e.init.proxy.beacon].filter(Boolean)}),Object.defineProperty(e.runtime,"denyList",{get:()=>[...e.init.ajax.deny_list||[],...e.init.ajax.block_internal?e.beacons:[]]}),e.runtime.ptid=e.agentIdentifier,function(e){const t=(0,n.pV)();Object.getOwnPropertyNames(i.W.prototype).forEach(r=>{const n=i.W.prototype[r];if("function"!=typeof n||"constructor"===n)return;let s=t[r];e[r]&&!1!==e.exposed&&"micro-agent"!==e.runtime?.loaderType&&(t[r]=(...t)=>{const n=e[r](...t);return s?s(...t):n})})}(e),e.runtime.loaderType=r,e.ee=x.ee.get(e.agentIdentifier),e.exposed=l,(0,R.W)({drained:!!e.runtime.activatedFeatures,type:"lifecycle",name:"initialize",feature:void 0,data:e.config}),e.runtime.configured=!0)}},384:(e,t,r)=>{"use strict";r.d(t,{NT:()=>a,Zm:()=>c,bQ:()=>d,dV:()=>u,pV:()=>l});var n=r(6154),i=r(1863),s=r(944),o=r(1910);const a={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function c(){return n.gm.NREUM||(n.gm.NREUM={}),void 0===n.gm.newrelic&&(n.gm.newrelic=n.gm.NREUM),n.gm.NREUM}function u(){let e=c();return e.o||(e.o={ST:n.gm.setTimeout,SI:n.gm.setImmediate||n.gm.setInterval,CT:n.gm.clearTimeout,XHR:n.gm.XMLHttpRequest,REQ:n.gm.Request,EV:n.gm.Event,PR:n.gm.Promise,MO:n.gm.MutationObserver,FETCH:n.gm.fetch,WS:n.gm.WebSocket},(0,o.i)(...Object.values(e.o))),e}function d(e,t){let r=c();r.initializedAgents??={},t.initializedAt={ms:(0,i.t)(),date:new Date},r.initializedAgents[e]=t,2===Object.keys(r.initializedAgents).length&&(0,s.R)(69)}function l(){return function(){let e=c();const t=e.info||{};e.info={beacon:a.beacon,errorBeacon:a.errorBeacon,...t}}(),function(){let e=c();const t=e.init||{};e.init={...t}}(),u(),function(){let e=c();const t=e.loader_config||{};e.loader_config={...t}}(),c()}},782:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.pageViewTiming},860:(e,t,r)=>{"use strict";r.d(t,{$J:()=>d,K7:()=>c,P3:()=>u,XX:()=>i,Yy:()=>a,df:()=>s,qY:()=>n,v4:()=>o});const n="events",i="jserrors",s="browser/blobs",o="rum",a="browser/logs",c={ajax:"ajax",genericEvents:"generic_events",jserrors:i,logging:"logging",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",softNav:"soft_navigations"},u={[c.pageViewEvent]:1,[c.pageViewTiming]:2,[c.metrics]:3,[c.jserrors]:4,[c.softNav]:5,[c.ajax]:6,[c.sessionTrace]:7,[c.sessionReplay]:8,[c.logging]:9,[c.genericEvents]:10},d={[c.pageViewEvent]:o,[c.pageViewTiming]:n,[c.ajax]:n,[c.softNav]:n,[c.metrics]:i,[c.jserrors]:i,[c.sessionTrace]:s,[c.sessionReplay]:s,[c.logging]:a,[c.genericEvents]:"ins"}},944:(e,t,r)=>{"use strict";r.d(t,{R:()=>i});var n=r(3241);function i(e,t){"function"==typeof console.debug&&(console.debug("New Relic Warning: https://github.com/newrelic/newrelic-browser-agent/blob/main/docs/warning-codes.md#".concat(e),t),(0,n.W)({drained:null,type:"data",name:"warn",feature:"warn",data:{code:e,secondary:t}}))}},1687:(e,t,r)=>{"use strict";r.d(t,{Ak:()=>a,Ze:()=>u,x3:()=>c});var n=r(3241),i=r(3606),s=r(860),o=r(2646);function a(e,t){if(!e)return;const r={staged:!1,priority:s.P3[t]||0};e.runtime.drainRegistry.get(t)||e.runtime.drainRegistry.set(t,r)}function c(e,t){if(!e)return;const r=e.runtime.drainRegistry;r&&(r.get(t)&&r.delete(t),l(e,t,!1),r.size&&d(e))}function u(e,t="feature",r=!1){if(e){if(!e.runtime.drainRegistry.get(t)||r)return l(e,t);e.runtime.drainRegistry.get(t).staged=!0,d(e)}}function d(e){if(!e)return;const t=Array.from(e.runtime.drainRegistry);t.every(([e,t])=>t.staged)&&(t.sort((e,t)=>e[1].priority-t[1].priority),t.forEach(([t])=>{e.runtime.drainRegistry.delete(t),l(e,t)}))}function l(e,t,r=!0){if(!e)return;const s=e.ee,a=i.i.handlers;if(s&&!s.aborted&&s.backlog&&a){if((0,n.W)({type:"lifecycle",name:"drain",feature:t}),r){const e=s.backlog[t],r=a[t];if(r){for(let t=0;e&&t<e.length;++t)f(e[t],r);Object.entries(r).forEach(([e,t])=>{Object.values(t||{}).forEach(t=>{t[0]?.on&&t[0].context()instanceof o.y&&!t[0].listeners(e).includes(t[1])&&t[0].on(e,t[1])})})}}s.isolatedBacklog||delete a[t],s.backlog[t]=null,s.emit("drain-"+t,[])}}function f(e,t){var r=e[1];Object.values(t[r]||{}).forEach(t=>{var r=e[0];if(t[0]===r){var n=t[1],i=e[3],s=e[2];n.apply(i,s)}})}},1738:(e,t,r)=>{"use strict";r.d(t,{U:()=>f,Y:()=>l});var n=r(3241),i=r(9908),s=r(1863),o=r(944),a=r(3969),c=r(8362),u=r(860),d=r(4261);function l(e,t,r,s){const l=s||r;!l||l[e]&&l[e]!==c.d.prototype[e]||(l[e]=function(){(0,i.p)(a.xV,["API/"+e+"/called"],void 0,u.K7.metrics,r.ee),(0,n.W)({drained:!!r.runtime?.activatedFeatures,type:"data",name:"api",feature:d.Pl+e,data:{}});try{return t.apply(this,arguments)}catch(e){(0,o.R)(23,e)}})}function f(e,t,r,n,o){const a=e.info;null===r?delete a.jsAttributes[t]:a.jsAttributes[t]=r,(o||null===r)&&(0,i.p)(d.Pl+n,[(0,s.t)(),t,r],void 0,"session",e.ee)}},1741:(e,t,r)=>{"use strict";r.d(t,{W:()=>s});var n=r(944),i=r(4261);class s{#e(e,...t){if(this[e]!==s.prototype[e])return this[e](...t);(0,n.R)(35,e)}addPageAction(e,t){return this.#e(i.hG,e,t)}register(e){return this.#e(i.eY,e)}recordCustomEvent(e,t){return this.#e(i.fF,e,t)}setPageViewName(e,t){return this.#e(i.Fw,e,t)}setCustomAttribute(e,t,r){return this.#e(i.cD,e,t,r)}noticeError(e,t){return this.#e(i.o5,e,t)}setUserId(e,t=!1){return this.#e(i.Dl,e,t)}setApplicationVersion(e){return this.#e(i.nb,e)}setErrorHandler(e){return this.#e(i.bt,e)}addRelease(e,t){return this.#e(i.k6,e,t)}log(e,t){return this.#e(i.$9,e,t)}start(){return this.#e(i.d3)}finished(e){return this.#e(i.BL,e)}recordReplay(){return this.#e(i.CH)}pauseReplay(){return this.#e(i.Tb)}addToTrace(e){return this.#e(i.U2,e)}setCurrentRouteName(e){return this.#e(i.PA,e)}interaction(e){return this.#e(i.dT,e)}wrapLogger(e,t,r){return this.#e(i.Wb,e,t,r)}measure(e,t){return this.#e(i.V1,e,t)}consent(e){return this.#e(i.Pv,e)}}},1863:(e,t,r)=>{"use strict";function n(){return Math.floor(performance.now())}r.d(t,{t:()=>n})},1910:(e,t,r)=>{"use strict";r.d(t,{i:()=>s});var n=r(944);const i=new Map;function s(...e){return e.every(e=>{if(i.has(e))return i.get(e);const t="function"==typeof e?e.toString():"",r=t.includes("[native code]"),s=t.includes("nrWrapper");return r||s||(0,n.R)(64,e?.name||t),i.set(e,r),r})}},2555:(e,t,r)=>{"use strict";r.d(t,{D:()=>a,f:()=>o});var n=r(384),i=r(8122);const s={beacon:n.NT.beacon,errorBeacon:n.NT.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0};function o(e){try{return!!e.licenseKey&&!!e.errorBeacon&&!!e.applicationID}catch(e){return!1}}const a=e=>(0,i.a)(e,s)},2614:(e,t,r)=>{"use strict";r.d(t,{BB:()=>o,H3:()=>n,g:()=>u,iL:()=>c,tS:()=>a,uh:()=>i,wk:()=>s});const n="NRBA",i="SESSION",s=144e5,o=18e5,a={STARTED:"session-started",PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},c={SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},u={OFF:0,FULL:1,ERROR:2}},2646:(e,t,r)=>{"use strict";r.d(t,{y:()=>n});class n{constructor(e){this.contextId=e}}},2843:(e,t,r)=>{"use strict";r.d(t,{G:()=>s,u:()=>i});var n=r(3878);function i(e,t=!1,r,i){(0,n.DD)("visibilitychange",function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)},r,i)}function s(e,t,r){(0,n.sp)("pagehide",e,t,r)}},3241:(e,t,r)=>{"use strict";r.d(t,{W:()=>s});var n=r(6154);const i="newrelic";function s(e={}){try{n.gm.dispatchEvent(new CustomEvent(i,{detail:e}))}catch(e){}}},3606:(e,t,r)=>{"use strict";r.d(t,{i:()=>s});var n=r(9908);s.on=o;var i=s.handlers={};function s(e,t,r,s){o(s||n.d,i,e,t,r)}function o(e,t,r,i,s){s||(s="feature"),e||(e=n.d);var o=t[s]=t[s]||{};(o[r]=o[r]||[]).push([e,i])}},3878:(e,t,r)=>{"use strict";function n(e,t){return{capture:e,passive:!1,signal:t}}function i(e,t,r=!1,i){window.addEventListener(e,t,n(r,i))}function s(e,t,r=!1,i){document.addEventListener(e,t,n(r,i))}r.d(t,{DD:()=>s,jT:()=>n,sp:()=>i})},3969:(e,t,r)=>{"use strict";r.d(t,{TZ:()=>n,XG:()=>a,rs:()=>i,xV:()=>o,z_:()=>s});const n=r(860).K7.metrics,i="sm",s="cm",o="storeSupportabilityMetrics",a="storeEventMetrics"},4234:(e,t,r)=>{"use strict";r.d(t,{W:()=>i});var n=r(1687);class i{constructor(e,t){this.agentRef=e,this.ee=e?.ee,this.featureName=t,this.blocked=!1}deregisterDrain(){(0,n.x3)(this.agentRef,this.featureName)}}},4261:(e,t,r)=>{"use strict";r.d(t,{$9:()=>u,BL:()=>a,CH:()=>g,Dl:()=>_,Fw:()=>y,PA:()=>h,Pl:()=>n,Pv:()=>k,Tb:()=>l,U2:()=>s,V1:()=>R,Wb:()=>x,bt:()=>b,cD:()=>v,d3:()=>w,dT:()=>c,eY:()=>p,fF:()=>f,hG:()=>i,k6:()=>o,nb:()=>m,o5:()=>d});const n="api-",i="addPageAction",s="addToTrace",o="addRelease",a="finished",c="interaction",u="log",d="noticeError",l="pauseReplay",f="recordCustomEvent",g="recordReplay",p="register",m="setApplicationVersion",h="setCurrentRouteName",v="setCustomAttribute",b="setErrorHandler",y="setPageViewName",_="setUserId",w="start",x="wrapLogger",R="measure",k="consent"},5289:(e,t,r)=>{"use strict";r.d(t,{GG:()=>o,Qr:()=>c,sB:()=>a});var n=r(3878),i=r(6389);function s(){return"undefined"==typeof document||"complete"===document.readyState}function o(e,t){if(s())return e();const r=(0,i.J)(e),o=setInterval(()=>{s()&&(clearInterval(o),r())},500);(0,n.sp)("load",r,t)}function a(e){if(s())return e();(0,n.DD)("DOMContentLoaded",e)}function c(e){if(s())return e();(0,n.sp)("popstate",e)}},5607:(e,t,r)=>{"use strict";r.d(t,{W:()=>n});const n=(0,r(9566).bz)()},6154:(e,t,r)=>{"use strict";r.d(t,{OF:()=>u,RI:()=>i,WN:()=>l,bv:()=>s,gm:()=>o,m:()=>c,mw:()=>a,sb:()=>d,zk:()=>f});var n=r(1863);const i="undefined"!=typeof window&&!!window.document,s="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),o=i?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),a=Boolean("hidden"===o?.document?.visibilityState),c=""+o?.location,u=/iPad|iPhone|iPod/.test(o.navigator?.userAgent),d=u&&"undefined"==typeof SharedWorker,l=((()=>{const e=o.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Date.now()-(0,n.t)()),f=()=>{const e=o?.performance?.getEntriesByType?.("navigation")?.[0];if(e&&e.responseStart>0&&e.responseStart<o.performance.now())return e}},6389:(e,t,r)=>{"use strict";function n(e,t=500,r={}){const n=r?.leading||!1;let i;return(...r)=>{n&&void 0===i&&(e.apply(this,r),i=setTimeout(()=>{i=clearTimeout(i)},t)),n||(clearTimeout(i),i=setTimeout(()=>{e.apply(this,r)},t))}}function i(e){let t=!1;return(...r)=>{t||(t=!0,e.apply(this,r))}}r.d(t,{J:()=>i,s:()=>n})},6630:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.pageViewEvent},7699:(e,t,r)=>{"use strict";r.d(t,{It:()=>s,KC:()=>a,No:()=>i,qh:()=>o});var n=r(860);const i=16e3,s=1e6,o="SESSION_ERROR",a={[n.K7.logging]:!0,[n.K7.genericEvents]:!0,[n.K7.jserrors]:!0,[n.K7.ajax]:!0}},7836:(e,t,r)=>{"use strict";r.d(t,{P:()=>a,ee:()=>c});var n=r(384),i=r(8990),s=r(2646),o=r(5607);const a="nr@context:".concat(o.W),c=function e(t,r){var n={},o={},d={},l=!1;try{l=16===r.length&&u.initializedAgents?.[r]?.runtime.isolatedBacklog}catch(e){}var f={on:p,addEventListener:p,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,s){!1!==s&&(s=!0);if(c.aborted&&!i)return;t&&s&&t.emit(e,r,n);var a=g(n);m(e).forEach(e=>{e.apply(a,r)});var u=v()[o[e]];u&&u.push([f,e,r,a]);return a},get:h,listeners:m,context:g,buffer:function(e,t){const r=v();if(t=t||"feature",f.aborted)return;Object.entries(e||{}).forEach(([e,n])=>{o[n]=t,t in r||(r[t]=[])})},abort:function(){f._aborted=!0,Object.keys(f.backlog).forEach(e=>{delete f.backlog[e]})},isBuffering:function(e){return!!v()[o[e]]},debugId:r,backlog:l?{}:t&&"object"==typeof t.backlog?t.backlog:{},isolatedBacklog:l};return Object.defineProperty(f,"aborted",{get:()=>{let e=f._aborted||!1;return e||(t&&(e=t.aborted),e)}}),f;function g(e){return e&&e instanceof s.y?e:e?(0,i.I)(e,a,()=>new s.y(a)):new s.y(a)}function p(e,t){n[e]=m(e).concat(t)}function m(e){return n[e]||[]}function h(t){return d[t]=d[t]||e(f,t)}function v(){return f.backlog}}(void 0,"globalEE"),u=(0,n.Zm)();u.ee||(u.ee=c)},8122:(e,t,r)=>{"use strict";r.d(t,{a:()=>i});var n=r(944);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.R)(3);if(!t||"object"!=typeof t)return(0,n.R)(4);const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),s=0===Object.keys(r).length?e:r;for(let o in s)if(void 0!==e[o])try{if(null===e[o]){r[o]=null;continue}Array.isArray(e[o])&&Array.isArray(t[o])?r[o]=Array.from(new Set([...e[o],...t[o]])):e[o]instanceof Map||e[o]instanceof Set||e[o]instanceof Date||e[o]instanceof RegExp?r[o]=e[o]:"object"==typeof e[o]&&"object"==typeof t[o]?r[o]=i(e[o],t[o]):r[o]=e[o]}catch(e){r[o]||(0,n.R)(1,e)}return r}catch(e){(0,n.R)(2,e)}}},8362:(e,t,r)=>{"use strict";r.d(t,{d:()=>s});var n=r(9566),i=r(1741);class s extends i.W{agentIdentifier=(0,n.LA)(16)}},8374:(e,t,r)=>{r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},8990:(e,t,r)=>{"use strict";r.d(t,{I:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},9324:(e,t,r)=>{"use strict";r.d(t,{F3:()=>i,Xs:()=>s,xv:()=>n});const n="1.314.0",i="PROD",s="CDN"},9566:(e,t,r)=>{"use strict";r.d(t,{LA:()=>a,bz:()=>o});var n=r(6154);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function s(e,t){return e?15&e[t]:16*Math.random()|0}function o(){const e=n.gm?.crypto||n.gm?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),i.split("").map(e=>"x"===e?s(t,r++).toString(16):"y"===e?(3&s()|8).toString(16):e).join("")}function a(e){const t=n.gm?.crypto||n.gm?.msCrypto;let r,i=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const o=[];for(var a=0;a<e;a++)o.push(s(r,i++).toString(16));return o.join("")}},9908:(e,t,r)=>{"use strict";r.d(t,{d:()=>n,p:()=>i});var n=r(7836).ee.get("handle");function i(e,t,r,i,s){s?(s.buffer([e],i),s.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var s=n[e]={exports:{}};return r[e](s,s.exports,i),s.exports}i.m=r,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce((t,r)=>(i.f[r](e,t),t),[])),i.u=e=>"nr-rum-1.314.0.min.js",i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.314.0.PROD:",i.l=(r,n,s,o)=>{if(e[r])e[r].push(n);else{var a,c;if(void 0!==s)for(var u=document.getElementsByTagName("script"),d=0;d<u.length;d++){var l=u[d];if(l.getAttribute("src")==r||l.getAttribute("data-webpack")==t+s){a=l;break}}if(!a){c=!0;var f={296:"sha512-FbQYvzpOfwjph/QfB76yraYvsPfIoLIoXmbBPgOSL90m11LUnHqHPaz/B+tzU1w8bIavuZOM2X1VS11GuaaFBA=="};(a=document.createElement("script")).charset="utf-8",i.nc&&a.setAttribute("nonce",i.nc),a.setAttribute("data-webpack",t+s),a.src=r,0!==a.src.indexOf(window.location.origin+"/")&&(a.crossOrigin="anonymous"),f[o]&&(a.integrity=f[o])}e[r]=[n];var g=(t,n)=>{a.onerror=a.onload=null,clearTimeout(p);var i=e[r];if(delete e[r],a.parentNode&&a.parentNode.removeChild(a),i&&i.forEach(e=>e(n)),t)return t(n)},p=setTimeout(g.bind(null,void 0,{type:"timeout",target:a}),12e4);a.onerror=g.bind(null,a.onerror),a.onload=g.bind(null,a.onload),c&&document.head.appendChild(a)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={374:0,840:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var s=new Promise((r,i)=>n=e[t]=[r,i]);r.push(n[2]=s);var o=i.p+i.u(t),a=new Error;i.l(o,r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var s=r&&("load"===r.type?"missing":r.type),o=r&&r.target&&r.target.src;a.message="Loading chunk "+t+" failed: ("+s+": "+o+")",a.name="ChunkLoadError",a.type=s,a.request=o,n[1](a)}},"chunk-"+t,t)}};var t=(t,r)=>{var n,s,[o,a,c]=r,u=0;if(o.some(t=>0!==e[t])){for(n in a)i.o(a,n)&&(i.m[n]=a[n]);if(c)c(i)}for(t&&t(r);u<o.length;u++)s=o[u],i.o(e,s)&&e[s]&&e[s][0](),e[s]=0},r=self["webpackChunk:NRBA-1.314.0.PROD"]=self["webpackChunk:NRBA-1.314.0.PROD"]||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})(),(()=>{"use strict";i(8374);var e=i(8362),t=i(860);const r=Object.values(t.K7);var n=i(163);var s=i(9908),o=i(1863),a=i(4261),c=i(1738);var u=i(1687),d=i(4234),l=i(5289),f=i(6154),g=i(944),p=i(384);const m=e=>f.RI&&!0===e?.privacy.cookies_enabled;function h(e){return!!(0,p.dV)().o.MO&&m(e)&&!0===e?.session_trace.enabled}var v=i(6389),b=i(7699);class y extends d.W{constructor(e,t){super(e,t),this.abortHandler=void 0,this.featAggregate=void 0,this.loadedSuccessfully=void 0,this.onAggregateImported=new Promise(e=>{this.loadedSuccessfully=e}),this.deferred=Promise.resolve(),!1===e.init[this.featureName].autoStart?this.deferred=new Promise((t,r)=>{this.ee.on("manual-start-all",(0,v.J)(()=>{(0,u.Ak)(e,this.featureName),t()}))}):(0,u.Ak)(e,t)}importAggregator(e,t,r={}){if(this.featAggregate)return;const n=async()=>{let n;await this.deferred;try{if(m(e.init)){const{setupAgentSession:t}=await i.e(296).then(i.bind(i,2612));n=t(e)}}catch(e){(0,g.R)(20,e),this.ee.emit("internal-error",[e]),(0,s.p)(b.qh,[e],void 0,this.featureName,this.ee)}try{if(!this.#t(this.featureName,n,e.init))return(0,u.Ze)(this.agentRef,this.featureName),void this.loadedSuccessfully(!1);const{Aggregate:i}=await t();this.featAggregate=new i(e,r),e.runtime.harvester.initializedAggregates.push(this.featAggregate),this.loadedSuccessfully(!0)}catch(e){(0,g.R)(34,e),this.abortHandler?.(),(0,u.Ze)(this.agentRef,this.featureName,!0),this.loadedSuccessfully(!1),this.ee&&this.ee.abort()}};f.RI?(0,l.GG)(()=>n(),!0):n()}#t(e,r,n){if(this.blocked)return!1;switch(e){case t.K7.sessionReplay:return h(n)&&!!r;case t.K7.sessionTrace:return!!r;default:return!0}}}var _=i(6630),w=i(2614),x=i(3241);class R extends y{static featureName=_.T;constructor(e){var t;super(e,_.T),this.setupInspectionEvents(),t=e,(0,c.Y)(a.Fw,function(e,r){"string"==typeof e&&("/"!==e.charAt(0)&&(e="/"+e),t.runtime.customTransaction=(r||"http://custom.transaction")+e,(0,s.p)(a.Pl+a.Fw,[(0,o.t)()],void 0,void 0,t.ee))},t),this.importAggregator(e,()=>i.e(296).then(i.bind(i,146)))}setupInspectionEvents(){const e=(e,t)=>{e&&(0,x.W)({timeStamp:e.timeStamp,loaded:"complete"===e.target.readyState,type:"window",name:t,data:e.target.location+""})};(0,l.sB)(t=>{e(t,"DOMContentLoaded")}),(0,l.GG)(t=>{e(t,"load")}),(0,l.Qr)(t=>{e(t,"navigate")}),this.ee.on(w.tS.UPDATE,(e,t)=>{(0,x.W)({type:"lifecycle",name:"session",data:t})})}}class k extends e.d{constructor(e){var t;(super(),f.gm)?(this.features={},(0,p.bQ)(this.agentIdentifier,this),this.desiredFeatures=new Set(e.features||[]),this.desiredFeatures.add(R),(0,n.j)(this,e,e.loaderType||"agent"),t=this,(0,c.Y)(a.cD,function(e,r,n=!1){if("string"==typeof e){if(["string","number","boolean"].includes(typeof r)||null===r)return(0,c.U)(t,e,r,a.cD,n);(0,g.R)(40,typeof r)}else(0,g.R)(39,typeof e)},t),function(e){(0,c.Y)(a.Dl,function(t,r=!1){if("string"!=typeof t&&null!==t)return void(0,g.R)(41,typeof t);const n=e.info.jsAttributes["enduser.id"];r&&null!=n&&n!==t?(0,s.p)(a.Pl+"setUserIdAndResetSession",[t],void 0,"session",e.ee):(0,c.U)(e,"enduser.id",t,a.Dl,!0)},e)}(this),function(e){(0,c.Y)(a.nb,function(t){if("string"==typeof t||null===t)return(0,c.U)(e,"application.version",t,a.nb,!1);(0,g.R)(42,typeof t)},e)}(this),function(e){(0,c.Y)(a.d3,function(){e.ee.emit("manual-start-all")},e)}(this),function(e){(0,c.Y)(a.Pv,function(t=!0){if("boolean"==typeof t){if((0,s.p)(a.Pl+a.Pv,[t],void 0,"session",e.ee),e.runtime.consented=t,t){const t=e.features.page_view_event;t.onAggregateImported.then(e=>{const r=t.featAggregate;e&&!r.sentRum&&r.sendRum()})}}else(0,g.R)(65,typeof t)},e)}(this),this.run()):(0,g.R)(21)}get config(){return{info:this.info,init:this.init,loader_config:this.loader_config,runtime:this.runtime}}get api(){return this}run(){try{const e=function(e){const t={};return r.forEach(r=>{t[r]=!!e[r]?.enabled}),t}(this.init),n=[...this.desiredFeatures];n.sort((e,r)=>t.P3[e.featureName]-t.P3[r.featureName]),n.forEach(r=>{if(!e[r.featureName]&&r.featureName!==t.K7.pageViewEvent)return;const n=function(e){switch(e){case t.K7.ajax:return[t.K7.jserrors];case t.K7.sessionTrace:return[t.K7.ajax,t.K7.pageViewEvent];case t.K7.sessionReplay:return[t.K7.sessionTrace];case t.K7.pageViewTiming:return[t.K7.pageViewEvent];default:return[]}}(r.featureName).filter(e=>!(e in this.features));n.length>0&&(0,g.R)(36,{targetFeature:r.featureName,missingDependencies:n}),this.features[r.featureName]=new r(this)})}catch(e){(0,g.R)(22,e);for(const e in this.features)this.features[e].abortHandler?.();const t=(0,p.Zm)();delete t.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator;return t.ee.get(this.agentIdentifier).abort(),!1}}}var A=i(2843),T=i(782);class E extends y{static featureName=T.T;constructor(e){super(e,T.T),f.RI&&((0,A.u)(()=>(0,s.p)("docHidden",[(0,o.t)()],void 0,T.T,this.ee),!0),(0,A.G)(()=>(0,s.p)("winPagehide",[(0,o.t)()],void 0,T.T,this.ee)),this.importAggregator(e,()=>i.e(296).then(i.bind(i,2117))))}}var S=i(3969);class j extends y{static featureName=S.TZ;constructor(e){super(e,S.TZ),this.importAggregator(e,()=>i.e(296).then(i.bind(i,9623)))}}new k({features:[R,E,j],loaderType:"lite"})})()})();</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Asesoría comercial Mercado Libre | Esencial · Impacto · Meli Pro</title>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+
+    *, *::before, *::after {
+      font-family: 'Google Sans', 'Proxima Nova', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+    }
+  :root {
+    --ml-yellow: #FFE600;
+    --ml-yellow-soft: #FFF159;
+    --ml-blue: #3483FA;
+    --ml-blue-dark: #2968C8;
+    --ml-green: #00A650;
+    --ml-bg: #FFFFFF;
+    --ml-bg-soft: #F5F5F5;
+    --ml-bg-blue: #EBF2FE;
+    --ml-text: #333333;
+    --ml-text-muted: #666666;
+    --ml-text-light: #999999;
+    --ml-border: #E5E5E5;
+    --ml-card-shadow: 0 1px 2px rgba(0,0,0,0.12), 0 0 1px rgba(0,0,0,0.04);
+    --ml-card-shadow-hover: 0 4px 16px rgba(0,0,0,0.12);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Google Sans', 'Proxima Nova', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: var(--ml-text);
+    background: var(--ml-bg);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+  /* ===== NAV ===== */
+  nav {
+    background: var(--ml-yellow);
+    padding: 14px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+  }
+  nav .container { display: flex; align-items: center; justify-content: space-between; }
+  .logo {
+    font-weight: 800;
+    font-size: 22px;
+    color: #2D3277;
+    letter-spacing: -0.5px;
+  }
+  .logo span { color: #2D3277; }
+  .nav-links { display: flex; gap: 28px; align-items: center; }
+  .nav-links a {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .nav-links a:hover { color: var(--ml-blue); }
+  .btn {
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    transition: all 0.15s ease;
+    font-family: inherit;
+  }
+  .btn-primary {
+    background: var(--ml-blue);
+    color: white;
+  }
+  .btn-primary:hover { background: var(--ml-blue-dark); }
+  .btn-outline {
+    background: transparent;
+    border: 1.5px solid var(--ml-blue);
+    color: var(--ml-blue);
+  }
+  .btn-outline:hover { background: var(--ml-bg-blue); }
+  .btn-yellow {
+    background: #2D3277;
+    color: white;
+  }
+  .btn-yellow:hover { background: #1d2360; }
+
+  /* ===== HERO ===== */
+  .hero {
+    background:
+      linear-gradient(135deg, rgba(255,230,0,0.95) 0%, rgba(255,241,89,0.85) 100%),
+      url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><defs><pattern id="dots" width="30" height="30" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.5" fill="%232D3277" opacity="0.08"/></pattern></defs><rect width="1200" height="600" fill="url(%23dots)"/></svg>');
+    padding: 72px 0 96px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 64px;
+    align-items: center;
+  }
+  .eyebrow {
+    display: inline-block;
+    background: #2D3277;
+    color: var(--ml-yellow);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 6px 14px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+  .hero h1 {
+    font-size: 52px;
+    font-weight: 800;
+    line-height: 1.1;
+    color: #2D3277;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+  }
+  .hero h1 em {
+    font-style: normal;
+    background: white;
+    padding: 0 6px;
+    color: var(--ml-blue);
+  }
+  .hero-sub {
+    font-size: 19px;
+    color: #2D3277;
+    margin-bottom: 32px;
+    line-height: 1.5;
+    max-width: 540px;
+  }
+  .hero-ctas { display: flex; gap: 12px; flex-wrap: wrap; }
+  .hero-visual {
+    position: relative;
+    height: 420px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(45, 50, 119, 0.18);
+    padding: 32px;
+    overflow: hidden;
+  }
+  .hero-visual::before {
+    content: '';
+    position: absolute;
+    top: -40px; right: -40px;
+    width: 180px; height: 180px;
+    background: var(--ml-yellow);
+    border-radius: 50%;
+    opacity: 0.4;
+  }
+  .stat-stack { position: relative; z-index: 1; }
+  .stat-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 18px 0;
+    border-bottom: 1px solid var(--ml-border);
+  }
+  .stat-row:last-child { border-bottom: none; }
+  .stat-icon {
+    width: 48px; height: 48px;
+    background: var(--ml-bg-blue);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 22px;
+    flex-shrink: 0;
+  }
+  .stat-num {
+    font-size: 22px;
+    font-weight: 800;
+    color: #2D3277;
+    line-height: 1.15;
+  }
+  .stat-label {
+    font-size: 13px;
+    color: var(--ml-text-muted);
+    margin-top: 4px;
+  }
+
+  /* ===== SECTION HEADERS ===== */
+  section { padding: 80px 0; }
+  .section-header { text-align: center; max-width: 720px; margin: 0 auto 56px; }
+  .section-eyebrow {
+    color: var(--ml-blue);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .section-title {
+    font-size: 38px;
+    font-weight: 800;
+    color: #2D3277;
+    line-height: 1.15;
+    margin-bottom: 16px;
+    letter-spacing: -0.5px;
+  }
+  .section-subtitle {
+    font-size: 18px;
+    color: var(--ml-text-muted);
+    line-height: 1.6;
+  }
+
+  /* ===== TIERS ===== */
+  .tiers {
+    background: var(--ml-bg-soft);
+  }
+  .tier-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    align-items: stretch;
+  }
+  .tier-card {
+    background: white;
+    border-radius: 12px;
+    padding: 32px 28px;
+    border: 2px solid transparent;
+    box-shadow: var(--ml-card-shadow);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: all 0.2s ease;
+  }
+  .tier-card:hover { transform: translateY(-4px); box-shadow: var(--ml-card-shadow-hover); }
+  .tier-card.featured {
+    border-color: var(--ml-yellow);
+    box-shadow: 0 8px 32px rgba(255, 230, 0, 0.25);
+  }
+  .tier-badge {
+    position: absolute;
+    top: -12px; left: 28px;
+    background: var(--ml-yellow);
+    color: #2D3277;
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 6px 12px;
+    border-radius: 4px;
+  }
+  .tier-tag {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    margin-bottom: 8px;
+  }
+  .tier-card.essential .tier-tag { color: var(--ml-text-light); }
+  .tier-card.impact .tier-tag { color: var(--ml-blue); }
+  .tier-card.pro .tier-tag { color: #2D3277; }
+  .tier-name {
+    font-size: 28px;
+    font-weight: 800;
+    color: #2D3277;
+    margin-bottom: 12px;
+    letter-spacing: -0.5px;
+  }
+  .tier-desc {
+    font-size: 14px;
+    color: var(--ml-text-muted);
+    margin-bottom: 24px;
+    min-height: 42px;
+  }
+  .tier-price {
+    font-size: 32px;
+    font-weight: 800;
+    color: #2D3277;
+    margin-bottom: 4px;
+  }
+  .tier-price small {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--ml-text-muted);
+  }
+  .tier-price-sub {
+    font-size: 12px;
+    color: var(--ml-text-light);
+    margin-bottom: 24px;
+    min-height: 16px;
+  }
+  .tier-divider {
+    height: 1px;
+    background: var(--ml-border);
+    margin: 0 0 20px;
+  }
+  .tier-paragraphs {
+    flex: 1;
+    margin-bottom: 24px;
+  }
+  .tier-attr-group {
+    margin-bottom: 18px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--ml-border);
+  }
+  .tier-attr-group:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .tier-attr-label {
+    font-size: 10px;
+    font-weight: 800;
+    color: var(--ml-text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.9px;
+    margin-bottom: 8px;
+  }
+  .tier-attr-bullets {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .tier-attr-bullets li {
+    font-size: 13px;
+    line-height: 1.5;
+    padding: 4px 0 4px 16px;
+    position: relative;
+    color: var(--ml-text);
+  }
+  .tier-attr-bullets li::before {
+    content: '·';
+    position: absolute;
+    left: 5px;
+    font-weight: 800;
+    color: var(--ml-text-light);
+  }
+  .tier-attr-bullets li.highlight {
+    color: var(--ml-green);
+    font-weight: 600;
+  }
+  .tier-attr-bullets li.highlight::before {
+    content: '✓';
+    color: var(--ml-green);
+    font-size: 12px;
+    font-weight: 800;
+    left: 0;
+  }
+  .tier-attr-bullets li.dim {
+    color: var(--ml-text-light);
+  }
+  .tier-cta { text-align: center; }
+  .tier-cta .btn { width: 100%; }
+
+  /* ===== HELP / TESTIMONIALS SECTION ===== */
+  .help-section { background: var(--ml-bg-soft); }
+  .help-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 56px;
+    align-items: start;
+  }
+  .help-left h2 {
+    font-size: 38px;
+    font-weight: 800;
+    color: #2D3277;
+    line-height: 1.15;
+    margin-bottom: 16px;
+    letter-spacing: -0.5px;
+  }
+  .help-left > p {
+    font-size: 16px;
+    color: var(--ml-text-muted);
+    line-height: 1.6;
+    margin-bottom: 32px;
+    max-width: 520px;
+  }
+  .help-features { display: flex; flex-direction: column; gap: 24px; margin-bottom: 28px; }
+  .help-feature { display: flex; gap: 16px; align-items: flex-start; }
+  .help-feature-icon {
+    width: 36px; height: 36px;
+    flex-shrink: 0;
+    color: #2D3277;
+  }
+  .help-feature h4 {
+    font-size: 17px;
+    font-weight: 700;
+    color: #2D3277;
+    margin-bottom: 6px;
+  }
+  .help-feature p {
+    font-size: 14px;
+    color: var(--ml-text-muted);
+    line-height: 1.55;
+  }
+  .help-link {
+    color: #2D3277;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+  }
+  .help-link::after { content: ' →'; }
+  .help-link:hover { text-decoration: underline; }
+
+  .testimonials-stack { display: flex; flex-direction: column; gap: 18px; }
+  .testimonial-card {
+    background: white;
+    border-radius: 12px;
+    padding: 28px;
+    box-shadow: var(--ml-card-shadow);
+  }
+  .testimonial-brand {
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--ml-text-light);
+    letter-spacing: 1px;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+    font-family: 'Google Sans', 'Proxima Nova', -apple-system, sans-serif;
+  }
+  .testimonial-quote {
+    font-size: 16px;
+    color: var(--ml-text);
+    line-height: 1.5;
+    margin-bottom: 18px;
+  }
+  .testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+  .testimonial-avatar {
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #FFE600, #FF9900);
+    flex-shrink: 0;
+  }
+  .testimonial-name {
+    font-size: 14px;
+    font-weight: 700;
+    color: #2D3277;
+    line-height: 1.2;
+  }
+  .testimonial-title {
+    font-size: 12px;
+    color: var(--ml-text-muted);
+  }
+
+  /* ===== VIDEO TESTIMONIALS ===== */
+  .videos-section { background: white; padding: 80px 0; }
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 48px;
+  }
+  .video-card {
+    aspect-ratio: 16 / 11;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--ml-card-shadow);
+    background: linear-gradient(135deg, #2D3277 0%, #1d2360 100%);
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    align-items: flex-end;
+  }
+  .video-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--ml-card-shadow-hover);
+  }
+  .video-thumb {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.55;
+  }
+  .video-thumb.t1 {
+    background-image: linear-gradient(135deg, #3483FA 0%, #2D3277 100%);
+  }
+  .video-thumb.t2 {
+    background-image: linear-gradient(135deg, #FF9900 0%, #FFE600 100%);
+  }
+  .video-thumb.t3 {
+    background-image: linear-gradient(135deg, #00A650 0%, #2D3277 100%);
+  }
+  .video-thumb.t4 {
+    background-image: linear-gradient(135deg, #FFE600 0%, #FF9900 100%);
+  }
+  .video-thumb.t5 {
+    background-image: linear-gradient(135deg, #2D3277 0%, #3483FA 100%);
+  }
+  .video-play {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 64px; height: 64px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+    transition: transform 0.2s ease;
+  }
+  .video-card:hover .video-play { transform: translate(-50%, -50%) scale(1.1); }
+  .video-play svg { width: 24px; height: 24px; color: #2D3277; margin-left: 3px; }
+  .video-meta {
+    position: relative;
+    padding: 18px 20px;
+    color: white;
+    width: 100%;
+    background: linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.7) 100%);
+    z-index: 1;
+  }
+  .video-name {
+    font-size: 15px;
+    font-weight: 800;
+    margin-bottom: 2px;
+  }
+  .video-role {
+    font-size: 12px;
+    opacity: 0.85;
+  }
+  .video-placeholder-tag {
+    position: absolute;
+    top: 14px; left: 14px;
+    background: rgba(255, 230, 0, 0.95);
+    color: #2D3277;
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 4px 10px;
+    border-radius: 4px;
+    z-index: 2;
+  }
+
+  /* ===== HOW IT WORKS ===== */
+  .how-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    margin-top: 48px;
+  }
+  .how-step { position: relative; }
+  .how-num {
+    width: 48px; height: 48px;
+    background: var(--ml-yellow);
+    color: #2D3277;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 800;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .how-step h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #2D3277;
+    margin-bottom: 10px;
+  }
+  .how-step p {
+    font-size: 14px;
+    color: var(--ml-text-muted);
+    line-height: 1.6;
+  }
+
+  /* ===== PILLARS ===== */
+  .pillars { background: var(--ml-bg-soft); }
+  .pillar-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 48px;
+  }
+  .pillar-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--ml-card-shadow);
+    transition: all 0.2s ease;
+  }
+  .pillar-card:hover { transform: translateY(-4px); box-shadow: var(--ml-card-shadow-hover); }
+  .pillar-img {
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  .pillar-img.commercial {
+    background:
+      linear-gradient(135deg, rgba(52, 131, 250, 0.85), rgba(45, 50, 119, 0.75)),
+      url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200"><rect fill="%233483FA" width="400" height="200"/><g fill="white" opacity="0.15"><rect x="50" y="120" width="20" height="60"/><rect x="80" y="100" width="20" height="80"/><rect x="110" y="80" width="20" height="100"/><rect x="140" y="60" width="20" height="120"/><rect x="170" y="40" width="20" height="140"/></g></svg>');
+  }
+  .pillar-img.operational {
+    background:
+      linear-gradient(135deg, rgba(0, 166, 80, 0.85), rgba(0, 120, 60, 0.75)),
+      url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200"><rect fill="%2300A650" width="400" height="200"/><g fill="white" opacity="0.15"><rect x="80" y="80" width="60" height="60" rx="4"/><rect x="160" y="80" width="60" height="60" rx="4"/><rect x="240" y="80" width="60" height="60" rx="4"/></g></svg>');
+  }
+  .pillar-img.strategy {
+    background:
+      linear-gradient(135deg, rgba(255, 153, 0, 0.85), rgba(204, 102, 0, 0.75)),
+      url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200"><rect fill="%23FF9900" width="400" height="200"/><g stroke="white" stroke-width="3" fill="none" opacity="0.4"><path d="M40,160 L100,120 L160,140 L220,80 L280,100 L340,40"/><circle cx="40" cy="160" r="4" fill="white"/><circle cx="100" cy="120" r="4" fill="white"/><circle cx="160" cy="140" r="4" fill="white"/><circle cx="220" cy="80" r="4" fill="white"/><circle cx="280" cy="100" r="4" fill="white"/><circle cx="340" cy="40" r="4" fill="white"/></g></svg>');
+  }
+  .pillar-img-label {
+    position: absolute;
+    bottom: 16px; left: 20px;
+    color: white;
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    background: rgba(0,0,0,0.25);
+    padding: 4px 10px;
+    border-radius: 4px;
+  }
+  .pillar-body { padding: 28px; }
+  .pillar-body h3 {
+    font-size: 22px;
+    font-weight: 800;
+    color: #2D3277;
+    margin-bottom: 12px;
+  }
+  .pillar-body p {
+    font-size: 14px;
+    color: var(--ml-text-muted);
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+  .pillar-body ul {
+    list-style: none;
+    padding: 0;
+  }
+  .pillar-body li {
+    font-size: 13px;
+    color: var(--ml-text);
+    padding: 6px 0;
+    padding-left: 18px;
+    position: relative;
+  }
+  .pillar-body li::before {
+    content: '•';
+    color: var(--ml-blue);
+    font-weight: 800;
+    position: absolute;
+    left: 0;
+  }
+
+  /* ===== COMPARISON ===== */
+  .comparison-table {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--ml-card-shadow);
+    margin-top: 48px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+  thead {
+    background: linear-gradient(135deg, #2D3277 0%, #1d2360 100%);
+    color: white;
+  }
+  thead th {
+    padding: 22px 20px;
+    text-align: left;
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    vertical-align: top;
+  }
+  thead th:nth-child(2) { text-align: center; }
+  thead th:nth-child(3) { text-align: center; background: rgba(52, 131, 250, 0.3); }
+  thead th:nth-child(4) {
+    text-align: center;
+    background: var(--ml-yellow);
+    color: #2D3277;
+  }
+  thead th small {
+    display: block;
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: none;
+    letter-spacing: 0;
+    opacity: 0.85;
+    margin-top: 4px;
+  }
+  tbody td {
+    padding: 18px 20px;
+    border-bottom: 1px solid var(--ml-border);
+    color: var(--ml-text);
+    vertical-align: top;
+  }
+  tbody td:first-child {
+    font-weight: 700;
+    color: #2D3277;
+  }
+  tbody td:first-child small {
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--ml-text-muted);
+    margin-top: 4px;
+  }
+  tbody td:nth-child(2),
+  tbody td:nth-child(3),
+  tbody td:nth-child(4) {
+    text-align: center;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  tbody tr:hover { background: var(--ml-bg-soft); }
+  tbody tr.price-row td {
+    background: #FFFEF2;
+    font-weight: 700;
+    font-size: 15px;
+  }
+  .check { color: var(--ml-green); font-weight: 800; font-size: 18px; margin-right: 4px; }
+  .dash { color: var(--ml-text-light); font-size: 16px; }
+
+  .compare-cta-wrap {
+    text-align: center;
+    margin-top: 32px;
+  }
+  .btn-compare {
+    background: #2D3277;
+    color: white;
+    padding: 16px 36px;
+    font-size: 15px;
+    border-radius: 6px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    font-family: inherit;
+  }
+  .btn-compare:hover {
+    background: #1d2360;
+    transform: translateY(-1px);
+  }
+  .btn-compare::after {
+    content: ' →';
+  }
+
+  /* ===== MODAL ===== */
+  .modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+    z-index: 1000;
+    display: none;
+    align-items: flex-start;
+    justify-content: center;
+    overflow-y: auto;
+    padding: 40px 16px;
+  }
+  .modal-overlay.open { display: flex; }
+  .modal {
+    background: white;
+    border-radius: 14px;
+    max-width: 1100px;
+    width: 100%;
+    box-shadow: 0 30px 80px rgba(0,0,0,0.3);
+    position: relative;
+    overflow: hidden;
+    animation: modalIn 0.2s ease-out;
+  }
+  @keyframes modalIn {
+    from { opacity: 0; transform: translateY(16px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .modal-header {
+    padding: 28px 32px 20px;
+    border-bottom: 1px solid var(--ml-border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    background: linear-gradient(135deg, #FFFEF2 0%, #FFFFFF 100%);
+  }
+  .modal-header h2 {
+    font-size: 22px;
+    font-weight: 800;
+    color: #2D3277;
+    letter-spacing: -0.3px;
+  }
+  .modal-header h2 small {
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--ml-text-muted);
+    margin-top: 4px;
+  }
+  .modal-close {
+    background: var(--ml-bg-soft);
+    border: none;
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    font-size: 22px;
+    cursor: pointer;
+    color: var(--ml-text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    line-height: 1;
+  }
+  .modal-close:hover { background: var(--ml-border); }
+  .modal-body {
+    padding: 32px;
+    max-height: 70vh;
+    overflow-y: auto;
+  }
+
+  .modal-view { display: none; }
+  .modal-view.active { display: block; }
+
+  .modal-back {
+    background: transparent;
+    border: none;
+    color: var(--ml-blue);
+    font-weight: 600;
+    cursor: pointer;
+    padding: 4px 0;
+    margin-bottom: 16px;
+    font-size: 14px;
+    font-family: inherit;
+  }
+  .modal-back:hover { text-decoration: underline; }
+
+  /* Resumen view */
+  .resumen-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 28px;
+  }
+  .resumen-tier {
+    border: 1px solid var(--ml-border);
+    border-radius: 10px;
+    padding: 20px;
+    background: white;
+  }
+  .resumen-tier.featured {
+    border-color: var(--ml-yellow);
+    background: #FFFEF2;
+  }
+  .resumen-tier h3 {
+    font-size: 18px;
+    font-weight: 800;
+    color: #2D3277;
+    margin-bottom: 4px;
+  }
+  .resumen-tier .price {
+    font-size: 13px;
+    color: var(--ml-text-muted);
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .resumen-tier .tagline {
+    font-size: 12px;
+    color: var(--ml-blue);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+  }
+
+  .resumen-attr {
+    border: 1px solid var(--ml-border);
+    border-radius: 10px;
+    margin-bottom: 14px;
+    overflow: hidden;
+  }
+  .resumen-attr-head {
+    background: var(--ml-bg-soft);
+    padding: 12px 18px;
+    border-bottom: 1px solid var(--ml-border);
+  }
+  .resumen-attr-head h4 {
+    font-size: 14px;
+    font-weight: 800;
+    color: #2D3277;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .resumen-attr-head small {
+    display: block;
+    font-size: 12px;
+    color: var(--ml-text-muted);
+    font-weight: 400;
+    margin-top: 2px;
+    text-transform: none;
+    letter-spacing: 0;
+  }
+  .resumen-attr-body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .resumen-attr-cell {
+    padding: 14px 18px;
+    border-right: 1px solid var(--ml-border);
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  .resumen-attr-cell:last-child { border-right: none; }
+  .resumen-attr-cell.featured { background: #FFFEF2; }
+  .resumen-attr-cell .label {
+    font-size: 11px;
+    font-weight: 800;
+    color: var(--ml-text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-bottom: 6px;
+  }
+  .resumen-attr-cell .check { font-size: 14px; }
+  .resumen-attr-cell.dash-cell { color: var(--ml-text-light); }
+  .attr-bullets { list-style: none; padding: 0; margin: 0; }
+  .attr-bullets li {
+    position: relative;
+    padding: 5px 0 5px 18px;
+    line-height: 1.45;
+    font-size: 13px;
+  }
+  .attr-bullets li::before {
+    content: '·';
+    position: absolute;
+    left: 6px;
+    color: var(--ml-text-light);
+    font-weight: 800;
+  }
+  .attr-bullets li.check::before {
+    content: '✓';
+    color: var(--ml-green);
+    font-size: 12px;
+    font-weight: 800;
+    left: 0;
+  }
+  .attr-bullets li.dim {
+    color: var(--ml-text-light);
+  }
+
+  .modal-cta-wrap {
+    text-align: center;
+    padding-top: 16px;
+    margin-top: 8px;
+    border-top: 1px solid var(--ml-border);
+  }
+  .modal-cta-wrap p {
+    font-size: 14px;
+    color: var(--ml-text-muted);
+    margin-bottom: 14px;
+  }
+  .btn-detail {
+    background: var(--ml-blue);
+    color: white;
+    padding: 12px 28px;
+    border-radius: 6px;
+    border: none;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    font-family: inherit;
+  }
+  .btn-detail:hover { background: var(--ml-blue-dark); }
+  .btn-detail::after { content: ' →'; }
+
+  /* Detail view */
+  .detail-section {
+    margin-bottom: 32px;
+    border: 1px solid var(--ml-border);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  .detail-section-head {
+    background: linear-gradient(135deg, #2D3277 0%, #1d2360 100%);
+    color: white;
+    padding: 20px 24px;
+  }
+  .detail-section-head h4 {
+    font-size: 17px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .detail-section-head small {
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+    opacity: 0.85;
+    margin-top: 4px;
+    text-transform: none;
+    letter-spacing: 0;
+  }
+  .detail-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .detail-cell {
+    padding: 22px 24px;
+    border-right: 1px solid var(--ml-border);
+  }
+  .detail-cell:last-child { border-right: none; }
+  .detail-cell.featured { background: #FFFEF2; }
+  .detail-cell .tier-label {
+    font-size: 11px;
+    font-weight: 800;
+    color: var(--ml-text-light);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+  }
+  .detail-cell .scope {
+    font-size: 14px;
+    font-weight: 700;
+    color: #2D3277;
+    margin-bottom: 10px;
+    line-height: 1.35;
+  }
+  .detail-cell p {
+    font-size: 13px;
+    color: var(--ml-text);
+    line-height: 1.6;
+  }
+
+  /* ===== FAQ ===== */
+  .faq-list { max-width: 820px; margin: 48px auto 0; }
+  .faq-item {
+    background: white;
+    border: 1px solid var(--ml-border);
+    border-radius: 8px;
+    margin-bottom: 12px;
+    overflow: hidden;
+  }
+  .faq-q {
+    padding: 20px 24px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    color: #2D3277;
+    font-size: 16px;
+    user-select: none;
+  }
+  .faq-q::after {
+    content: '+';
+    font-size: 24px;
+    color: var(--ml-blue);
+    font-weight: 400;
+    transition: transform 0.2s;
+  }
+  .faq-item.open .faq-q::after { transform: rotate(45deg); }
+  .faq-a {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    padding: 0 24px;
+    color: var(--ml-text-muted);
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  .faq-item.open .faq-a {
+    max-height: 400px;
+    padding: 0 24px 20px;
+  }
+
+  /* ===== CTA FINAL ===== */
+  .cta-final {
+    background: var(--ml-yellow);
+    color: #2D3277;
+    text-align: center;
+    padding: 80px 0;
+  }
+  .cta-final h2 {
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 16px;
+    letter-spacing: -0.5px;
+  }
+  .cta-final p {
+    font-size: 18px;
+    margin-bottom: 32px;
+    color: #2D3277;
+    opacity: 0.85;
+  }
+  .cta-final .btn-yellow {
+    padding: 16px 36px;
+    font-size: 16px;
+  }
+
+  /* ===== FOOTER ===== */
+  footer {
+    background: #2D3277;
+    color: rgba(255,255,255,0.85);
+    padding: 48px 0 24px;
+    font-size: 14px;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 48px;
+    margin-bottom: 32px;
+  }
+  footer h4 {
+    color: white;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+  }
+  footer ul { list-style: none; }
+  footer li { padding: 6px 0; }
+  footer a {
+    color: rgba(255,255,255,0.85);
+    text-decoration: none;
+    font-size: 14px;
+  }
+  footer a:hover { color: var(--ml-yellow); }
+  .footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.15);
+    padding-top: 20px;
+    text-align: center;
+    font-size: 12px;
+    color: rgba(255,255,255,0.5);
+  }
+  .footer-disclaimer {
+    background: rgba(0,0,0,0.15);
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-top: 32px;
+    font-size: 12px;
+    color: rgba(255,255,255,0.7);
+    line-height: 1.5;
+  }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 960px) {
+    .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+    .tier-grid, .pillar-grid, .resumen-grid, .detail-grid, .resumen-attr-body, .help-grid { grid-template-columns: 1fr; }
+    .help-left h2 { font-size: 28px; }
+    .how-grid { grid-template-columns: repeat(2, 1fr); }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+    .hero h1 { font-size: 36px; }
+    .section-title { font-size: 28px; }
+    .nav-links { display: none; }
+    table { font-size: 12px; }
+    tbody td, thead th { padding: 12px 10px; }
+    .resumen-attr-cell, .detail-cell { border-right: none; border-bottom: 1px solid var(--ml-border); }
+    .resumen-attr-cell:last-child, .detail-cell:last-child { border-bottom: none; }
+    .modal-body { padding: 20px; max-height: 75vh; }
+  }
+</style>
+<script>(function(){function _ok(r,onOk){return r.json().then(function(b){if(!r.ok)throw b;onOk(b);return b;});}window.GRID=window.GRID||{};window.GRID.docId="01KS5HXBFF8B1DCEB95SCSFB2F";window.GRID._stateUpdatedAt='';window.GRID._stateUpdatedAtByName=window.GRID._stateUpdatedAtByName||{};window.GRID.states={get:function(name){var n=String(name||'').trim();if(!n)return Promise.reject({error:'validation_error',detail:'state name is required'});return fetch('/api/v1/documents/'+"01KS5HXBFF8B1DCEB95SCSFB2F"+'/states/'+encodeURIComponent(n)).then(function(r){return _ok(r,function(b){window.GRID._stateUpdatedAtByName[n]=b.updated_at||'';});});},set:function(name,data,ifUpdatedAt){var n=String(name||'').trim();if(!n)return Promise.reject({error:'validation_error',detail:'state name is required'});return fetch('/api/v1/documents/'+"01KS5HXBFF8B1DCEB95SCSFB2F"+'/states/'+encodeURIComponent(n),{method:'PUT',headers:{'Content-Type':'application/json'},body:JSON.stringify({state:data,if_updated_at:(typeof ifUpdatedAt==='string'?ifUpdatedAt:(window.GRID._stateUpdatedAtByName[n]||''))})}).then(function(r){return _ok(r,function(b){window.GRID._stateUpdatedAtByName[n]=b.updated_at||'';});});},patch:function(name,patchData,ifUpdatedAt){var n=String(name||'').trim();if(!n)return Promise.reject({error:'validation_error',detail:'state name is required'});return fetch('/api/v1/documents/'+"01KS5HXBFF8B1DCEB95SCSFB2F"+'/states/'+encodeURIComponent(n),{method:'PATCH',headers:{'Content-Type':'application/json'},body:JSON.stringify({patch:patchData,if_updated_at:(typeof ifUpdatedAt==='string'?ifUpdatedAt:(window.GRID._stateUpdatedAtByName[n]||''))})}).then(function(r){return _ok(r,function(b){window.GRID._stateUpdatedAtByName[n]=b.updated_at||'';});});}};window.GRID.state={get:function(){return fetch('/api/v1/documents/'+"01KS5HXBFF8B1DCEB95SCSFB2F"+'/state').then(function(r){return _ok(r,function(b){window.GRID._stateUpdatedAt=b.updated_at||'';});});},set:function(data,ifUpdatedAt){return fetch('/api/v1/documents/'+"01KS5HXBFF8B1DCEB95SCSFB2F"+'/state',{method:'PUT',headers:{'Content-Type':'application/json'},body:JSON.stringify({state:data,if_updated_at:(typeof ifUpdatedAt==='string'?ifUpdatedAt:(window.GRID._stateUpdatedAt||''))})}).then(function(r){return _ok(r,function(b){window.GRID._stateUpdatedAt=b.updated_at||'';});});},patch:function(patchData,ifUpdatedAt){return fetch('/api/v1/documents/'+"01KS5HXBFF8B1DCEB95SCSFB2F"+'/state',{method:'PATCH',headers:{'Content-Type':'application/json'},body:JSON.stringify({patch:patchData,if_updated_at:(typeof ifUpdatedAt==='string'?ifUpdatedAt:(window.GRID._stateUpdatedAt||''))})}).then(function(r){return _ok(r,function(b){window.GRID._stateUpdatedAt=b.updated_at||'';});});}};}());</script><style id="gridHighlightStyles">.grid-highlight{background:rgba(52,131,250,.15);border-bottom:2px solid rgba(52,131,250,.5);cursor:pointer;border-radius:2px;transition:background .2s}.grid-highlight:hover{background:rgba(52,131,250,.3)}</style><style id="gridPinStyles">.grid-annot-pin{display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;margin-left:2px;background:#3483fa;color:#fff;border-radius:50%;cursor:pointer;vertical-align:middle;box-shadow:0 2px 8px rgba(52,131,250,.3);transition:transform .2s cubic-bezier(.175,.885,.32,1.275),box-shadow .2s;position:relative;z-index:10;animation:gpinPop .3s cubic-bezier(.175,.885,.32,1.275)}.grid-annot-pin:hover{transform:scale(1.15);box-shadow:0 4px 12px rgba(52,131,250,.5)}.grid-annot-pin svg{width:12px;height:12px}.grid-annot-pin-resolved{background:#30d158;opacity:.7;box-shadow:0 2px 8px rgba(48,209,88,.3)}.grid-annot-pin-resolved:hover{opacity:1;box-shadow:0 4px 12px rgba(48,209,88,.5)}@keyframes gpinPop{from{transform:scale(0);opacity:0}to{transform:scale(1);opacity:1}}</style></head>
+<body style="outline: none;">
+
+<!-- ===== NAV ===== -->
+<nav>
+  <div class="container">
+    <div class="logo">Mercado <span>Libre</span> · Asesorías</div>
+    <div class="nav-links">
+      <a href="#niveles">Niveles</a>
+      <a href="#como-funciona">Cómo funciona</a>
+      <a href="#beneficios">Beneficios</a>
+      <a href="#comparativo">Comparativo</a>
+      <a href="#faq">Preguntas</a>
+      <a href="#contacto" class="btn btn-primary" style="padding: 8px 18px;">Habla con un asesor</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <span class="eyebrow">Programa de asesoramiento para vendedores</span>
+        <h1>Crece más rápido con un <em>asesor experto</em> de Mercado Libre.</h1>
+        <p class="hero-sub">
+          Tres niveles diseñados según el tamaño y la complejidad de tu negocio.
+          Desde autogestión asistida hasta un asesor dedicado con visión 360° de tu cuenta.
+        </p>
+        <div class="hero-ctas">
+          <a href="#niveles" class="btn btn-primary">Ver los 3 niveles</a>
+          <a href="#contacto" class="btn btn-outline">Habla con un asesor</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="stat-stack">
+          <div class="stat-row">
+            <div class="stat-icon" style="background:#FFF7B2;">★</div>
+            <div>
+              <div class="stat-num">Especialista por categoría</div>
+              <div class="stat-label">Asesor que conoce tu vertical y tu cartera</div>
+            </div>
+          </div>
+          <div class="stat-row">
+            <div class="stat-icon" style="background:#D7E8FF;">⌖</div>
+            <div>
+              <div class="stat-num">Plan anual conjunto</div>
+              <div class="stat-label">Estrategia co-creada con tu marca · seguimiento semanal</div>
+            </div>
+          </div>
+          <div class="stat-row">
+            <div class="stat-icon" style="background:#CCEDD9;">↗</div>
+            <div>
+              <div class="stat-num">Prioridad en pilotos</div>
+              <div class="stat-label">Heavy &amp; Bulky · B2B · nuevas categorías</div>
+            </div>
+          </div>
+          <div class="stat-row">
+            <div class="stat-icon" style="background:#FFE4D1;">♥</div>
+            <div>
+              <div class="stat-num">Reputación protegida</div>
+              <div class="stat-label">Monitoreo activo y escalamiento prioritario en CX</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TIERS ===== -->
+<section class="tiers" id="niveles">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-eyebrow">Elige tu nivel</div>
+      <h2 class="section-title">Tres formas de crecer con Mercado Libre</h2>
+      <p class="section-subtitle">
+        Cada nivel está diseñado para una etapa distinta del negocio.
+        El traspaso entre niveles se evalúa trimestralmente según tu volumen de ventas.
+      </p>
+    </div>
+
+    <div class="tier-grid">
+
+      <!-- ESENCIAL -->
+      <div class="tier-card essential">
+        <div class="tier-tag">Para empezar</div>
+        <div class="tier-name" style="color: rgb(45, 57, 118);">Esencial</div>
+        <div class="tier-desc">Autogestión asistida con acceso a la información clave para vender por tu cuenta.</div>
+        <div class="tier-price">Gratis</div>
+        <div class="tier-price-sub">Cupos limitados según postulación</div>
+
+        <div class="tier-divider"></div>
+
+        <div class="tier-paragraphs">
+          <div class="tier-attr-group">
+            <div class="tier-attr-label">Especialización del asesor y cartera</div>
+            <ul class="tier-attr-bullets">
+              <li>Analista Especializado multicategoría</li>
+              <li>150 cuentas por asesor</li>
+            </ul>
+          </div>
+          <div class="tier-attr-group">
+            <div class="tier-attr-label">Plan de Trabajo</div>
+            <ul class="tier-attr-bullets">
+              <li class="dim">Sólo gestión ante oportunidades y alertas de la cuenta</li>
+            </ul>
+          </div>
+          <div class="tier-attr-group">
+            <div class="tier-attr-label">Palancas Comerciales</div>
+            <ul class="tier-attr-bullets">
+              <li>Cupos en campañas sin diferenciación</li>
+            </ul>
+          </div>
+          <div class="tier-attr-group">
+            <div class="tier-attr-label">Pilotos y Lanzamientos</div>
+            <ul class="tier-attr-bullets">
+              <li class="dim">Sin prioridad</li>
+            </ul>
+          </div>
+          <div class="tier-attr-group">
+            <div class="tier-attr-label">Gestión de Problemas y CX</div>
+            <ul class="tier-attr-bullets">
+              <li>Gestión 100% del seller</li>
+              <li class="dim">Sin escalamiento de casos</li>
+            </ul>
+          </div>
+          <div class="tier-attr-group">
+            <div class="tier-attr-label">Seguimiento Logístico</div>
+            <ul class="tier-attr-bullets">
+              <li class="highlight">Recolecta gratuita de pedidos de tu almacén (a partir de 5 unidades diarias)</li>
+            </ul>
+          </div>
+          <div class="tier-attr-group">
+            <div class="tier-attr-label">Seguimiento Publicidad (Ads)</div>
+            <ul class="tier-attr-bullets">
+              <li class="dim">Sin sesiones dedicadas</li>
+            </ul>
+          </div>
+          <div class="tier-attr-group">
+            <div class="tier-attr-label">Seguimiento general de la cuenta</div>
+            <ul class="tier-attr-bullets">
+              <li>Contacto quincenal por mail</li>
+              <li>Reunión 1:1 ad-hoc según necesidad (alerta u oportunidad)</li>
+            </ul>
+          </div>
+          <div class="tier-attr-group">
+            <div class="tier-attr-label">Agenda de reunión</div>
+            <ul class="tier-attr-bullets">
+              <li>Revisión de alarmas u oportunidades</li>
+              <li>Soluciones y próximos pasos</li>
+            </ul>
+          </div>
+          <div class="tier-attr-group">
+            <div class="tier-attr-label">Reporting</div>
+            <ul class="tier-attr-bullets">
+              <li>Reporte semanal automatizado (ventas, visitas, conversión)</li>
+              <li class="dim">No es on-demand ni customizado</li>
+            </ul>
+          </div>
+          <div class="tier-attr-group">
+            <div class="tier-attr-label">Comunicación y disponibilidad</div>
+            <ul class="tier-attr-bullets">
+              <li>Mail y WhatsApp con asesor</li>
+              <li class="dim">SLA no definido</li>
+            </ul>
+          </div>
+          <div class="tier-attr-group">
+            <div class="tier-attr-label">KPIs observados</div>
+            <ul class="tier-attr-bullets">
+              <li>NMV (venta)</li>
+              <li>Visitas, conversión y precio promedio</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tier-cta">
+          <a href="#" class="btn btn-outline">Postular a Esencial</a>
+        </div>
+      </div>
+
+      <!-- IMPACTO -->
+      <div class="tier-card impact">
+        <div class="tier-tag">Aceleración táctica</div>
+        <div class="tier-name" style="color: rgb(48, 196, 28);">Impacto</div>
+        <div class="tier-threshold" style="margin: 6px 0 10px; padding: 7px 14px; background: rgba(48,196,28,0.10); border-left: 3px solid rgb(48,196,28); border-radius: 6px;">
+          <div style="font-size:14px; font-weight:700; color: rgb(48,196,28); letter-spacing:0.01em;">Vendedores que venden más de S/ 10,000/mes</div>
+          <div style="font-size:13px; color:var(--ml-text-muted); margin-top:2px;">Vendedores que facturan más de S/ 10,000/mes</div>
+        </div>
+        <div class="tier-desc">Asesoría 360° para acelerar las palancas tácticas: catálogo, Flex, reputación y Ads.</div>
+        <div class="tier-price" style="color: rgb(48, 196, 28);">S/ 999<small>/mes</small></div>
+        <div class="tier-price-sub">Tarifa única flat</div>
+        <div class="tier-price-sub" style="font-size: 14px;"><b style="font-size: 14px;">Todo lo de ESENCIAL MÁS</b></div>
+
+        <div class="tier-divider"></div>
+
+        <div class="tier-paragraphs">
+          <div class="tier-attr-group">
+            <div class="tier-attr-label">Especialización del asesor y cartera</div>
+            <ul class="tier-attr-bullets">
+              <li class="highlight">Analista Especializado por categoría</li>
+              <li>35–40 cuentas por asesor</li>
+            </ul>
+          </div>
+          <div class="tier-attr-group">
+            <div class="tier-attr-label">Plan de Trabajo</div>
+            <ul class="tier-attr-bullets">
+              <li class="highlight">Plan trimestral de ventas, seguimiento quincenal</li>
+              <li>Diagnóstico estandarizado no customizado</li>
+            </ul>
+          </div>
+          <div class="tier-attr-group">
+            <div class="tier-attr-label">Palancas Comerciales</div>
+            <ul class="tier-attr-bullets">
+              <li class="highlight">Cupos prioritarios en campañas</li>
+              <li>Prioridad de posicionamiento</li>
+              <li>Visibilidad en campañas · push y mailing</li>
+            </ul>
+          </div>
+          <div class="tier-attr-group">
+            <div class="tier-attr-label">Pilotos y Lanzamientos</div>
+            <ul class="tier-attr-bullets">
+              <li>Sesiones introductorias de contenido general</li>
+              <li>Segunda prioridad activación pilotos: Heavy &amp; Bulky, B2B, etc. Late access</li>
+            </ul>
+          </div>
+          <div class="tier-attr-group">
+            <div class="tier-attr-label">Gestión de Problemas y CX</div>
+            <ul class="tier-attr-bullets">
+              <li>Gestión del seller, apoyo puntual del asesor</li>
+              <li class="highlight">Escalamiento de casos ad-hoc, máximo 2 mensuales</li>
+            </ul>
+          </div>
+          <div class="tier-attr-group">
+            <div class="tier-attr-label">Seguimiento Logístico</div>
+            <ul class="tier-attr-bullets">
+              <li class="highlight">Asesoría básica Flex mediante asesor</li>
+            </ul>
+          </div>
+          <div class="tier-attr-group">
+            <div class="tier-attr-label">Seguimiento Publicidad (Ads)</div>
+            <ul class="tier-attr-bullets">
+              <li class="highlight">Asesoría CC+ básica (solo Product Ads) incluida</li>
+              <li>Sesión quincenal de asesoría Ads (30 min)</li>
+              <li>Orientación básica en campañas</li>
+            </ul>
+          </div>
+          <div class="tier-attr-group">
+            <div class="tier-attr-label">Seguimiento general de la cuenta</div>
+            <ul class="tier-attr-bullets">
+              <li class="highlight">Reunión 1:1 quincenal (30 min)</li>
+              <li>Comunicación activa por WhatsApp y mail</li>
+              <li class="dim">Sin reuniones adicionales</li>
+            </ul>
+          </div>
+          <div class="tier-attr-group">
+            <div class="tier-attr-label">Agenda de reunión</div>
+            <ul class="tier-attr-bullets">
+              <li class="highlight">Performance de alto nivel, sin detalle</li>
+              <li>Problemas críticos</li>
+              <li>Próximos pasos operativos</li>
+            </ul>
+          </div>
+          <div class="tier-attr-group">
+            <div class="tier-attr-label">Reporting</div>
+            <ul class="tier-attr-bullets">
+              <li>Reporte semanal automatizado (ventas, visitas, conversión)</li>
+              <li class="highlight">Acciones según alertas u oportunidades</li>
+            </ul>
+          </div>
+          <div class="tier-attr-group">
+            <div class="tier-attr-label">Comunicación y disponibilidad</div>
+            <ul class="tier-attr-bullets">
+              <li>Mail y WhatsApp con asesor</li>
+              <li class="dim">SLA no definido</li>
+            </ul>
+          </div>
+          <div class="tier-attr-group">
+            <div class="tier-attr-label">KPIs observados</div>
+            <ul class="tier-attr-bullets">
+              <li>NMV (venta)</li>
+              <li>Visitas, conversión y precio promedio</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tier-cta">
+          <a href="#" class="btn btn-primary">Conocer Impacto</a>
+        </div>
+      </div>
+
+      <!-- MELI PRO -->
+      <div class="tier-card pro featured">
+        <div class="tier-badge">Más recomendado</div>
+        <div class="tier-tag">Visión ecosistémica</div>
+        <div class="tier-name" style="color: rgb(253, 220, 8);">Meli Pro</div>
+        <div class="tier-threshold" style="margin: 6px 0 10px; padding: 7px 14px; background: rgba(253,220,8,0.10); border-left: 3px solid rgb(253,220,8); border-radius: 6px;">
+          <div style="font-size:14px; font-weight:700; color: rgb(253,220,8); letter-spacing:0.01em;">Vendedores que venden más de S/ 100,000/mes</div>
+          <div style="font-size:13px; color:var(--ml-text-muted); margin-top:2px;">Vendedores que facturan más de S/ 100,000/mes</div>
+        </div>
+        <div class="tier-desc">Equipo senior <strong>CONSULTIVO</strong> dedicado con visión 360°, foco estratégico y acceso a palancas exclusivas.</div>
+        <div class="tier-price" style="font-size: 32px; color: rgb(253, 220, 8);">desde S/ 3,220<small>/mes</small></div>
+        <div class="tier-price-sub">según complejidad de la cuenta</div>
+        <div class="tier-price-sub" style="font-size: 14px;"><b>Todo lo de IMPACTO MÁS</b></div>
+
+        <div class="tier-divider"></div>
+
+        <div class="tier-paragraphs">
+          <div class="tier-attr-group">
+            <div class="tier-attr-label">Especialización del asesor y cartera</div>
+            <ul class="tier-attr-bullets">
+              <li class="highlight">Equipo senior: asesor, subgerente y gerente</li>
+              <li>Especialización por categoría</li>
+              <li>Máx. 15 cuentas por asesor</li>
+              <li>Relación cercana entre partes, con visitas a oficinas del seller</li>
+            </ul>
+          </div>
+          <div class="tier-attr-group">
+            <div class="tier-attr-label">Plan de Trabajo</div>
+            <ul class="tier-attr-bullets">
+              <li class="highlight">Plan anual y estrategia conjunta con la marca, seguimiento semanal</li>
+              <li>Diagnóstico interno completo + benchmarks de la industria y posición competitiva</li>
+              <li>Foco en adopción ecosistema Meli con accionables customizados para el seller</li>
+            </ul>
+          </div>
+          <div class="tier-attr-group">
+            <div class="tier-attr-label">Palancas Comerciales</div>
+            <ul class="tier-attr-bullets">
+              <li>Cupos exclusivos en campañas</li>
+              <li>Prioridad en posicionamiento</li>
+              <li class="highlight">Espacios de máxima prioridad para eventos clave (Black, Cyber, etc.) con push y mailing</li>
+              <li>Gráficas / medios exclusivos y posibilidad de RRSS</li>
+              <li>Apoyo intenso en campañas comerciales</li>
+            </ul>
+          </div>
+          <div class="tier-attr-group">
+            <div class="tier-attr-label">Pilotos y Lanzamientos</div>
+            <ul class="tier-attr-bullets">
+              <li>Sesiones profundas con detalle customizado</li>
+              <li class="highlight">Prioridad en nuevas funcionalidades y pilotos (Envíos Pesados, Fulfillment, etc.)</li>
+              <li>Apertura de nuevas categorías con data ad-hoc para el seller</li>
+            </ul>
+          </div>
+          <div class="tier-attr-group">
+            <div class="tier-attr-label">Gestión de Problemas y CX</div>
+            <ul class="tier-attr-bullets">
+              <li>Gestión del seller, apoyo activo del asesor</li>
+              <li>Escalamiento y seguimiento de casos constante</li>
+              <li class="highlight">Sin límite mensual de casos a escalar</li>
+            </ul>
+          </div>
+          <div class="tier-attr-group">
+            <div class="tier-attr-label">Seguimiento Logístico</div>
+            <ul class="tier-attr-bullets">
+              <li class="highlight">Asesoría logística completa mediante asesor (incluye gestión de reputación)</li>
+              <li>Gestión activa de penetración Flex (aumento de conversión)</li>
+              <li class="highlight">Bonificaciones Meli: Recolecta gratuita</li>
+            </ul>
+          </div>
+          <div class="tier-attr-group">
+            <div class="tier-attr-label">Seguimiento Publicidad (Ads)</div>
+            <ul class="tier-attr-bullets">
+              <li class="highlight">Asesoría en Publicidad Premium</li>
+              <li class="highlight">Carga de Clips Gratuito con agencia especializada</li>
+              <li>Sesión quincenal de asesoría Ads (30 min a 1 hora)</li>
+              <li>Asesor Ads optimizando ROAS de forma activa</li>
+              <li>Espacios priorizados y posibilidad de visibilidad adicional</li>
+            </ul>
+          </div>
+          <div class="tier-attr-group">
+            <div class="tier-attr-label">Seguimiento general de la cuenta</div>
+            <ul class="tier-attr-bullets">
+              <li class="highlight">Reunión 1:1 semanal (1 hora)</li>
+              <li>Comunicación activa por WhatsApp y mail</li>
+              <li>Reuniones adicionales ilimitadas a petición del seller o por oportunidad</li>
+            </ul>
+          </div>
+          <div class="tier-attr-group">
+            <div class="tier-attr-label">Agenda de reunión</div>
+            <ul class="tier-attr-bullets">
+              <li class="highlight">Performance detallado, problemas críticos, estrategia comercial y seguimiento del calendario comercial</li>
+              <li>Deep dive del ecosistema y adopción de palancas Meli</li>
+              <li>Lanzamiento de nuevas marcas, categorías y productos</li>
+            </ul>
+          </div>
+          <div class="tier-attr-group">
+            <div class="tier-attr-label">Reporting</div>
+            <ul class="tier-attr-bullets">
+              <li class="highlight">Reporting personalizado por seller apalancando data de Meli</li>
+              <li>Alta visibilidad (profundidad y frecuencia)</li>
+              <li>Deep dives y solicitudes específicas con data customizada</li>
+            </ul>
+          </div>
+          <div class="tier-attr-group">
+            <div class="tier-attr-label">Comunicación y disponibilidad</div>
+            <ul class="tier-attr-bullets">
+              <li>Mail y WhatsApp con asesor</li>
+              <li class="highlight">SLA: respuesta rápida y prioritaria</li>
+            </ul>
+          </div>
+          <div class="tier-attr-group">
+            <div class="tier-attr-label">KPIs observados</div>
+            <ul class="tier-attr-bullets">
+              <li>NMV (venta)</li>
+              <li>Visitas, conversión y precio promedio</li>
+              <li>Competitividad, stock, Full / Flex, B2B, Ads</li>
+              <li class="highlight">KPIs customizados y personalizados por caso de negocio</li>
+            </ul>
+          </div>
+          <div class="tier-attr-group">
+            <div class="tier-attr-label">Beneficio Exclusivo</div>
+            <ul class="tier-attr-bullets">
+              <li class="highlight">Negociaciones de Precios y apoyo con descuentos en Campañas Comerciales</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tier-cta">
+          <a href="#" class="btn btn-yellow">Postular a Meli Pro</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="compare-cta-wrap">
+      <button class="btn-compare" id="openCompareModal">Comparar modelos de asesoría</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== HELP / TESTIMONIALS ===== -->
+<section class="help-section">
+  <div class="container">
+    <div class="help-grid">
+      <div class="help-left">
+        <h2>¿Cómo te ayudan los programas de asesoría?</h2>
+        <p>
+          Tu asesor te acompaña a optimizar tu negocio en MercadoLibre para alcanzar tus objetivos
+          mediante orientación táctica, planificación estratégica y acceso a especialistas en cada
+          área del ecosistema.
+        </p>
+        <div class="help-features">
+          <div class="help-feature">
+            <svg class="help-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+            </svg>
+            <div>
+              <h4>Orientación táctica</h4>
+              <p>Optimiza catálogo, Full, Ads, posicionamiento y participación en campañas clave del calendario comercial de MercadoLibre.</p>
+            </div>
+          </div>
+          <div class="help-feature">
+            <svg class="help-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+              <path d="M2 17l10 5 10-5"></path>
+              <path d="M2 12l10 5 10-5"></path>
+            </svg>
+            <div>
+              <h4>Planificación estratégica</h4>
+              <p>Recibe un plan de crecimiento personalizado y asesoramiento sobre cómo maximizar el potencial de las palancas y programas de Meli.</p>
+            </div>
+          </div>
+          <div class="help-feature">
+            <svg class="help-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 21h6"></path>
+              <path d="M12 17v4"></path>
+              <path d="M12 3a6 6 0 0 1 6 6c0 2.5-1.5 4.5-3 6-1 1-1 2-1 2H10s0-1-1-2c-1.5-1.5-3-3.5-3-6a6 6 0 0 1 6-6z"></path>
+            </svg>
+            <div>
+              <h4>Especialistas en la materia</h4>
+              <p>Conecta con expertos de Meli en logística, publicidad, atención al cliente y nuevas categorías para resolver problemas y abrir oportunidades.</p>
+            </div>
+          </div>
+        </div>
+        <a href="#contacto" class="help-link">Ver todos los casos de éxito</a>
+      </div>
+
+      <div class="testimonials-stack">
+        <div class="testimonial-card">
+          <div class="testimonial-brand">SELLER 1</div>
+          <p class="testimonial-quote">"[Placeholder] Quote del seller pendiente de definir."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar"></div>
+            <div>
+              <div class="testimonial-name">Nombre del seller</div>
+              <div class="testimonial-title">Cargo · empresa</div>
+            </div>
+          </div>
+          <a href="#" class="help-link">Ver la historia del vendedor</a>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-brand">SELLER 2</div>
+          <p class="testimonial-quote">"[Placeholder] Quote del seller pendiente de definir."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar"></div>
+            <div>
+              <div class="testimonial-name">Nombre del seller</div>
+              <div class="testimonial-title">Cargo · empresa</div>
+            </div>
+          </div>
+          <a href="#" class="help-link">Ver la historia del vendedor</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== HOW IT WORKS ===== -->
+<section id="como-funciona">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-eyebrow">Cómo funciona</div>
+      <h2 class="section-title">Del primer contacto al plan de crecimiento</h2>
+      <p class="section-subtitle">
+        Un proceso simple y transparente para que sepas exactamente qué esperar de tu asesoría.
+      </p>
+    </div>
+
+    <div class="how-grid">
+      <div class="how-step">
+        <div class="how-num">1</div>
+        <h3>Diagnóstico de tu cuenta</h3>
+        <p>Revisamos tu volumen, categorías y desempeño. Te ubicamos en el nivel adecuado según tu NMV mensual.</p>
+      </div>
+      <div class="how-step">
+        <div class="how-num">2</div>
+        <h3>Asignación de tu asesor</h3>
+        <p>Te asignamos un asesor con experiencia en tu vertical. En Meli Pro, un equipo senior (asesor, subgerente y gerente) especialista en tu categoría.</p>
+      </div>
+      <div class="how-step">
+        <div class="how-num">3</div>
+        <h3>Plan de crecimiento</h3>
+        <p>Construimos juntos el plan: comercial, operativo y estratégico. En Meli Pro incluye un Plan anual con la marca.</p>
+      </div>
+      <div class="how-step">
+        <div class="how-num">4</div>
+        <h3>Seguimiento y resultados</h3>
+        <p>Reuniones recurrentes, reporting y ajustes en tiempo real. Cada trimestre evaluamos si corresponde subir de nivel.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PILLARS / BENEFITS ===== -->
+<section class="pillars" id="beneficios">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-eyebrow">Tres pilares de valor</div>
+      <h2 class="section-title">Todo lo que tu asesoría puede mover</h2>
+      <p class="section-subtitle">
+        Las palancas que activamos para que tu negocio venda más, opere mejor y crezca con foco estratégico.
+      </p>
+    </div>
+
+    <div class="pillar-grid">
+      <div class="pillar-card">
+        <div class="pillar-img commercial">
+          <span class="pillar-img-label">Comercial</span>
+        </div>
+        <div class="pillar-body">
+          <h3>Visibilidad y campañas</h3>
+          <p>Activamos las palancas que mueven tus ventas dentro del ecosistema MercadoLibre.</p>
+          <ul>
+            <li>Cupos en campañas comerciales</li>
+            <li>Posicionamiento priorizado vs. PADs</li>
+            <li>Push, mailing y medios digitales</li>
+            <li>Espacios de máxima prioridad en eventos clave (Meli Pro)</li>
+            <li>Gráficas y medios exclusivos (Meli Pro)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pillar-card">
+        <div class="pillar-img operational">
+          <span class="pillar-img-label">Operativo</span>
+        </div>
+        <div class="pillar-body">
+          <h3>Eficiencia y reputación</h3>
+          <p>Optimizamos cómo opera tu cuenta para proteger márgenes y experiencia.</p>
+          <ul>
+            <li>Gestión activa de penetración Full</li>
+            <li>Asesoría logística completa</li>
+            <li>Protección de reputación e indicadores CX</li>
+            <li>Bonificaciones de colecta y warehousing (Meli Pro)</li>
+            <li>Stock priorizado en killer items</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pillar-card">
+        <div class="pillar-img strategy">
+          <span class="pillar-img-label">Estrategia</span>
+        </div>
+        <div class="pillar-body">
+          <h3>Crecimiento de largo plazo</h3>
+          <p>Construimos contigo el plan que te lleva al siguiente nivel.</p>
+          <ul>
+            <li>Asesor Ads activo optimizando ROAS</li>
+            <li>Heavy &amp; Bulky · piloto B2B</li>
+            <li>Apertura de nuevas categorías</li>
+            <li>Acceso a Data MeLi (intel competitivo)</li>
+            <li>Recuperación de venta CX</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== COMPARISON TABLE (Slide #2 base) ===== -->
+<section id="comparativo">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-eyebrow">Comparativo</div>
+      <h2 class="section-title">Resumen de los modelos de asesoría</h2>
+      <p class="section-subtitle">
+        A mayor nivel de asesoría, más especialización, mayor disponibilidad y estrategia más profunda.
+      </p>
+    </div>
+
+    <div class="comparison-table">
+      <table>
+        <thead>
+          <tr>
+            <th>Atributo</th>
+            <th style="font-size: 18px;">Esencial<small>Gratuito</small></th>
+            <th style="font-size: 18px;">Impacto<small style="font-weight: 800; font-size: 14px;">S/ 999 / mes</small><small style="color: rgb(255, 255, 255); font-weight: 700; font-size: 12px; display: block;">Vendedores que venden o facturan más de S/ 10,000/mes</small></th>
+            <th style="font-size: 18px;">Meli Pro<small style="font-weight: 800; font-size: 14px;">desde S/ 3,220 / mes</small><small style="color: var(--ml-text-muted); font-weight: 800; font-size: 12px; display: block;">Vendedores que venden o facturan más de S/ 100,000/mes</small></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Especialización del asesor y cartera<small>Seniority y foco</small></td>
+            <td>Multicategoría<br><span style="color:var(--ml-text-muted); font-size:12px;">Analista Especializado</span></td>
+            <td><span class="check">✓</span> Especialista<br><span style="color:var(--ml-text-muted); font-size:12px;">Analista Especializado</span></td>
+            <td><span class="check">✓</span> Especialista<br><span style="color:var(--ml-text-muted); font-size:12px;">Equipo senior (asesor, subgerente y gerente)</span></td>
+          </tr>
+          <tr>
+            <td>Plan de Trabajo<small>Tipo de plan y profundidad estratégica</small></td>
+            <td>Oportunidades ad hoc o problemas<br><span style="color:var(--ml-text-muted); font-size:12px;">Sin sesiones recurrentes ni plan estratégico</span></td>
+            <td>Plan trimestral de alto nivel<br><span style="color:var(--ml-text-muted); font-size:12px;">Sesión quincenal</span></td>
+            <td><span class="check">✓</span> Plan semanal en base a estrategia conjunta anual</td>
+          </tr>
+          <tr>
+            <td>Palancas Comerciales<small>Visibilidad, campañas y medios</small></td>
+            <td><span class="dash">—</span></td>
+            <td><span class="check">✓</span> Cupos asegurados<br><span style="color:var(--ml-text-muted); font-size:12px;">Asesoría CC+ básica incluida</span></td>
+            <td><span class="check">✓</span> Espacios prioritarios exclusivos<br><span style="color:var(--ml-text-muted); font-size:12px;">Asesoría en Publicidad Premium + Clips gratuito</span></td>
+          </tr>
+          <tr>
+            <td>Pilotos y Lanzamientos<small>Heavy &amp; Bulky · B2B · nuevas categorías</small></td>
+            <td><span class="dash">—</span></td>
+            <td>Segunda prioridad en activación</td>
+            <td><span class="check">✓</span> Priorización activa<br><span style="color:var(--ml-text-muted); font-size:12px;">Prioridad en funcionalidades y pilotos clave</span></td>
+          </tr>
+          <tr>
+            <td>Gestión de Problemas y CX<small>Monitoreo de reputación · escalamiento con apoyo</small></td>
+            <td>Autogestión</td>
+            <td>Autogestión<br><span style="color:var(--ml-text-muted); font-size:12px;">Escalamiento puntual situaciones críticas</span></td>
+            <td><span class="check">✓</span> Monitoreo activo asesor<br><span style="color:var(--ml-text-muted); font-size:12px;">Escalamiento prioritario y sin límites</span></td>
+          </tr>
+          <tr class="price-row">
+            <td>Precio</td>
+            <td>Gratuito</td>
+            <td>S/ 999 / mes</td>
+            <td>desde S/ 3,220 / mes</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== MODAL ===== -->
+<div class="modal-overlay" id="compareModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal">
+    <div class="modal-header">
+      <h2 id="modalTitle">
+        Comparativo de propuesta de valor
+        <small>Esencial · Impacto · Meli Pro</small>
+      </h2>
+      <button class="modal-close" aria-label="Cerrar" id="closeModal">×</button>
+    </div>
+    <div class="modal-body">
+
+      <!-- VIEW 1: Resumen (deprecated — bullets ahora viven directo en las tarjetas de tier; se accede al detalle con un solo click) -->
+      <div class="modal-view" id="viewResumen" style="display:none;">
+        <p style="font-size:14px; color:var(--ml-text-muted); margin-bottom: 24px;">
+          A mayor nivel de asesoría, más especialización, mayor disponibilidad y estrategia más profunda.
+        </p>
+
+        <div class="resumen-grid">
+          <div class="resumen-tier">
+            <h3>Esencial</h3>
+            <div class="price">Gratuito · cupos limitados</div>
+            <div class="tagline">Autogestión asistida</div>
+          </div>
+          <div class="resumen-tier">
+            <h3>Impacto</h3>
+            <div class="price">S/ 999 / mes</div>
+            <div class="tagline">Aceleración táctica</div>
+            <div style="margin-top:8px; padding:5px 10px; background:rgba(48,196,28,0.12); border-left:3px solid rgb(48,196,28); border-radius:5px;">
+              <div style="font-size:13px; font-weight:700; color:rgb(48,196,28);">Más de S/ 10,000/mes</div>
+              <div style="font-size:11px; color:var(--ml-text-muted);">Vendedores que facturan más de S/ 10,000/mes</div>
+            </div>
+          </div>
+          <div class="resumen-tier featured">
+            <h3>Meli Pro</h3>
+            <div class="price">desde S/ 3,220 / mes</div>
+            <div class="tagline">Estrategia conjunta</div>
+            <div style="margin-top:8px; padding:5px 10px; background:rgba(253,220,8,0.12); border-left:3px solid rgb(253,220,8); border-radius:5px;">
+              <div style="font-size:13px; font-weight:700; color:rgb(253,220,8);">Más de S/ 100,000/mes</div>
+              <div style="font-size:11px; color:var(--ml-text-muted);">Vendedores que facturan más de S/ 100,000/mes</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 1. Especialización -->
+        <div class="resumen-attr">
+          <div class="resumen-attr-head">
+            <h4>Especialización del asesor y cartera</h4>
+            <small>Seniority, foco y tamaño de cartera</small>
+          </div>
+          <div class="resumen-attr-body">
+            <div class="resumen-attr-cell">
+              <div class="label">Esencial</div>
+              <ul class="attr-bullets">
+                <li>Analista Especializado multicategoría</li>
+                <li>Cartera muy amplia</li>
+              </ul>
+            </div>
+            <div class="resumen-attr-cell">
+              <div class="label">Impacto</div>
+              <ul class="attr-bullets">
+                <li class="check">Analista Especializado por categoría</li>
+                <li>Cartera acotada</li>
+              </ul>
+            </div>
+            <div class="resumen-attr-cell featured">
+              <div class="label">Meli Pro</div>
+              <ul class="attr-bullets">
+                <li class="check">Equipo senior: asesor, subgerente y gerente</li>
+                <li class="check">Especialización por categoría</li>
+                <li>Cartera muy reducida</li>
+                <li>Relación cercana entre partes, con visitas a oficinas del seller</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Plan de Trabajo -->
+        <div class="resumen-attr">
+          <div class="resumen-attr-head">
+            <h4>Plan de Trabajo</h4>
+            <small>Tipo de plan y profundidad estratégica</small>
+          </div>
+          <div class="resumen-attr-body">
+            <div class="resumen-attr-cell">
+              <div class="label">Esencial</div>
+              <ul class="attr-bullets">
+                <li class="dim">Sólo gestión ante oportunidades y alertas de la cuenta</li>
+              </ul>
+            </div>
+            <div class="resumen-attr-cell">
+              <div class="label">Impacto</div>
+              <ul class="attr-bullets">
+                <li>Plan trimestral de ventas sin detalle</li>
+                <li>Seguimiento quincenal</li>
+                <li>Diagnóstico estandarizado no customizado</li>
+              </ul>
+            </div>
+            <div class="resumen-attr-cell featured">
+              <div class="label">Meli Pro</div>
+              <ul class="attr-bullets">
+                <li class="check">Plan anual y estrategia conjunta con la marca</li>
+                <li class="check">Seguimiento semanal</li>
+                <li>Diagnóstico interno completo + benchmarks de la industria y posición competitiva</li>
+                <li>Foco en adopción ecosistema Meli con accionables customizados</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Palancas Comerciales -->
+        <div class="resumen-attr">
+          <div class="resumen-attr-head">
+            <h4>Palancas Comerciales</h4>
+            <small>Visibilidad, campañas y medios</small>
+          </div>
+          <div class="resumen-attr-body">
+            <div class="resumen-attr-cell">
+              <div class="label">Esencial</div>
+              <ul class="attr-bullets">
+                <li>Cupos en campañas sin diferenciación</li>
+              </ul>
+            </div>
+            <div class="resumen-attr-cell">
+              <div class="label">Impacto</div>
+              <ul class="attr-bullets">
+                <li>Cupos prioritarios en campañas</li>
+                <li>Prioridad de posicionamiento</li>
+                <li>Visibilidad en campañas · push y mailing</li>
+              </ul>
+            </div>
+            <div class="resumen-attr-cell featured">
+              <div class="label">Meli Pro</div>
+              <ul class="attr-bullets">
+                <li class="check">Cupos exclusivos en campañas</li>
+                <li class="check">Prioridad en posicionamiento</li>
+                <li>Espacios de máxima prioridad para eventos clave (Black, Cyber, etc.) con push y mailing</li>
+                <li>Gráficas / medios exclusivos y posibilidad de RRSS</li>
+                <li>Apoyo intenso en campañas comerciales</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Pilotos y Lanzamientos -->
+        <div class="resumen-attr">
+          <div class="resumen-attr-head">
+            <h4>Pilotos y Lanzamientos</h4>
+            <small>Heavy &amp; Bulky · B2B · nuevas categorías</small>
+          </div>
+          <div class="resumen-attr-body">
+            <div class="resumen-attr-cell">
+              <div class="label">Esencial</div>
+              <ul class="attr-bullets">
+                <li class="dim">Sin prioridad</li>
+              </ul>
+            </div>
+            <div class="resumen-attr-cell">
+              <div class="label">Impacto</div>
+              <ul class="attr-bullets">
+                <li>Sesiones introductorias de contenido general</li>
+                <li>Segunda prioridad en activación de pilotos: Heavy &amp; Bulky, B2B, etc.</li>
+                <li>Late access</li>
+              </ul>
+            </div>
+            <div class="resumen-attr-cell featured">
+              <div class="label">Meli Pro</div>
+              <ul class="attr-bullets">
+                <li class="check">Sesiones profundas con detalle customizado</li>
+                <li class="check">Prioridad en nuevas funcionalidades y pilotos (Envíos Pesados, Fulfillment, etc.)</li>
+                <li>Apertura de nuevas categorías con data ad-hoc para el seller</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Gestión de Problemas y CX -->
+        <div class="resumen-attr">
+          <div class="resumen-attr-head">
+            <h4>Gestión de Problemas y CX</h4>
+            <small>Monitoreo de reputación y escalamiento</small>
+          </div>
+          <div class="resumen-attr-body">
+            <div class="resumen-attr-cell">
+              <div class="label">Esencial</div>
+              <ul class="attr-bullets">
+                <li>Gestión 100% del seller</li>
+                <li class="dim">Sin escalamiento de casos</li>
+              </ul>
+            </div>
+            <div class="resumen-attr-cell">
+              <div class="label">Impacto</div>
+              <ul class="attr-bullets">
+                <li>Gestión del seller, apoyo puntual del asesor</li>
+                <li>Escalamiento de casos ad-hoc, máximo 2 mensuales</li>
+              </ul>
+            </div>
+            <div class="resumen-attr-cell featured">
+              <div class="label">Meli Pro</div>
+              <ul class="attr-bullets">
+                <li class="check">Gestión del seller con apoyo activo del asesor</li>
+                <li class="check">Escalamiento y seguimiento de casos constante, sin límite mensual</li>
+                <li>Problemas serios: involucramiento de todo el equipo de Meli Pro (incluyendo subgerente y gerente)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Seguimiento Logístico -->
+        <div class="resumen-attr">
+          <div class="resumen-attr-head">
+            <h4>Seguimiento Logístico</h4>
+            <small>Flex y gestión de reputación logística</small>
+          </div>
+          <div class="resumen-attr-body">
+            <div class="resumen-attr-cell">
+              <div class="label">Esencial</div>
+              <ul class="attr-bullets">
+                <li class="dim">Sin sesiones dedicadas</li>
+              </ul>
+            </div>
+            <div class="resumen-attr-cell">
+              <div class="label">Impacto</div>
+              <ul class="attr-bullets">
+                <li>Asesoría básica Flex mediante asesor</li>
+              </ul>
+            </div>
+            <div class="resumen-attr-cell featured">
+              <div class="label">Meli Pro</div>
+              <ul class="attr-bullets">
+                <li class="check">Asesoría logística completa mediante asesor (incluye gestión de reputación)</li>
+                <li class="check">Gestión activa de penetración Flex (aumento de conversión)</li>
+                <li class="check">Bonificaciones Meli: Recolecta gratuita</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. Seguimiento Publicidad (Ads) -->
+        <div class="resumen-attr">
+          <div class="resumen-attr-head">
+            <h4>Seguimiento Publicidad (Ads)</h4>
+            <small>Optimización ROAS, Product Ads y campañas</small>
+          </div>
+          <div class="resumen-attr-body">
+            <div class="resumen-attr-cell">
+              <div class="label">Esencial</div>
+              <ul class="attr-bullets">
+                <li class="dim">Sin sesiones dedicadas</li>
+              </ul>
+            </div>
+            <div class="resumen-attr-cell">
+              <div class="label">Impacto</div>
+              <ul class="attr-bullets">
+                <li>Asesoría CC+ básica (solo Product Ads) incluida en costo Impacto</li>
+                <li>Sesión quincenal de asesoría Ads (30 min)</li>
+                <li>Orientación básica en campañas</li>
+              </ul>
+            </div>
+            <div class="resumen-attr-cell featured">
+              <div class="label">Meli Pro</div>
+              <ul class="attr-bullets">
+                <li class="check">Asesoría en Publicidad Premium</li>
+                <li class="check">Carga de Clips Gratuito con agencia especializada</li>
+                <li class="check">Sesión quincenal de asesoría Ads (30 min a 1 hora)</li>
+                <li>Asesor Ads optimizando ROAS de forma activa</li>
+                <li>Espacios priorizados y posibilidad de visibilidad adicional</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8. Seguimiento General de la Cuenta -->
+        <div class="resumen-attr">
+          <div class="resumen-attr-head">
+            <h4>Seguimiento General de la Cuenta</h4>
+            <small>Frecuencia y formato de contacto</small>
+          </div>
+          <div class="resumen-attr-body">
+            <div class="resumen-attr-cell">
+              <div class="label">Esencial</div>
+              <ul class="attr-bullets">
+                <li>Contacto quincenal por mail</li>
+                <li>Reunión 1:1 ad-hoc según necesidad (alerta u oportunidad)</li>
+              </ul>
+            </div>
+            <div class="resumen-attr-cell">
+              <div class="label">Impacto</div>
+              <ul class="attr-bullets">
+                <li>Reunión 1:1 quincenal (30 min)</li>
+                <li>Comunicación activa por WhatsApp y mail</li>
+                <li class="dim">Sin reuniones adicionales</li>
+              </ul>
+            </div>
+            <div class="resumen-attr-cell featured">
+              <div class="label">Meli Pro</div>
+              <ul class="attr-bullets">
+                <li class="check">Reunión 1:1 semanal (1 hora)</li>
+                <li class="check">Comunicación activa por WhatsApp y mail</li>
+                <li>Reuniones adicionales ilimitadas a petición del seller o por oportunidad</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9. Agenda de Reunión -->
+        <div class="resumen-attr">
+          <div class="resumen-attr-head">
+            <h4>Agenda de Reunión</h4>
+            <small>Profundidad y temas tratados en cada sesión</small>
+          </div>
+          <div class="resumen-attr-body">
+            <div class="resumen-attr-cell">
+              <div class="label">Esencial</div>
+              <ul class="attr-bullets">
+                <li>Revisión de alarmas u oportunidades</li>
+                <li>Soluciones y próximos pasos</li>
+              </ul>
+            </div>
+            <div class="resumen-attr-cell">
+              <div class="label">Impacto</div>
+              <ul class="attr-bullets">
+                <li>Performance de alto nivel, sin detalle</li>
+                <li>Problemas críticos</li>
+                <li>Próximos pasos operativos</li>
+              </ul>
+            </div>
+            <div class="resumen-attr-cell featured">
+              <div class="label">Meli Pro</div>
+              <ul class="attr-bullets">
+                <li class="check">Performance detallado, problemas críticos, estrategia comercial y seguimiento del calendario comercial</li>
+                <li class="check">Deep dive del ecosistema y adopción de palancas Meli</li>
+                <li>Lanzamiento de nuevas marcas, categorías y productos</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 10. Reporting -->
+        <div class="resumen-attr">
+          <div class="resumen-attr-head">
+            <h4>Reporting</h4>
+            <small>Tipo y profundidad del reporte recibido</small>
+          </div>
+          <div class="resumen-attr-body">
+            <div class="resumen-attr-cell">
+              <div class="label">Esencial</div>
+              <ul class="attr-bullets">
+                <li>Reporte semanal automatizado (ventas, visitas, conversión)</li>
+                <li class="dim">No es on-demand ni customizado</li>
+              </ul>
+            </div>
+            <div class="resumen-attr-cell">
+              <div class="label">Impacto</div>
+              <ul class="attr-bullets">
+                <li>Reporte semanal automatizado (ventas, visitas, conversión)</li>
+                <li>Acciones según alertas u oportunidades</li>
+              </ul>
+            </div>
+            <div class="resumen-attr-cell featured">
+              <div class="label">Meli Pro</div>
+              <ul class="attr-bullets">
+                <li class="check">Reporting personalizado por seller apalancando data de Meli</li>
+                <li class="check">Alta visibilidad (profundidad y frecuencia)</li>
+                <li>Deep dives y solicitudes específicas con data customizada</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 11. Comunicación y Disponibilidad -->
+        <div class="resumen-attr">
+          <div class="resumen-attr-head">
+            <h4>Comunicación y Disponibilidad</h4>
+            <small>Canales de contacto y SLA</small>
+          </div>
+          <div class="resumen-attr-body">
+            <div class="resumen-attr-cell">
+              <div class="label">Esencial</div>
+              <ul class="attr-bullets">
+                <li>Mail y WhatsApp con asesor</li>
+                <li class="dim">SLA no definido</li>
+              </ul>
+            </div>
+            <div class="resumen-attr-cell">
+              <div class="label">Impacto</div>
+              <ul class="attr-bullets">
+                <li>Mail y WhatsApp con asesor</li>
+                <li class="dim">SLA no definido</li>
+              </ul>
+            </div>
+            <div class="resumen-attr-cell featured">
+              <div class="label">Meli Pro</div>
+              <ul class="attr-bullets">
+                <li class="check">Mail y WhatsApp con asesor</li>
+                <li class="check">SLA: respuesta rápida y prioritaria</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 12. KPIs Observados -->
+        <div class="resumen-attr">
+          <div class="resumen-attr-head">
+            <h4>KPIs Observados</h4>
+            <small>Indicadores que el asesor monitorea por seller</small>
+          </div>
+          <div class="resumen-attr-body">
+            <div class="resumen-attr-cell">
+              <div class="label">Esencial</div>
+              <ul class="attr-bullets">
+                <li>NMV (venta)</li>
+                <li>Visitas, conversión y precio promedio</li>
+              </ul>
+            </div>
+            <div class="resumen-attr-cell">
+              <div class="label">Impacto</div>
+              <ul class="attr-bullets">
+                <li>NMV (venta)</li>
+                <li>Visitas, conversión y precio promedio</li>
+              </ul>
+            </div>
+            <div class="resumen-attr-cell featured">
+              <div class="label">Meli Pro</div>
+              <ul class="attr-bullets">
+                <li class="check">NMV (venta)</li>
+                <li class="check">Visitas, conversión y precio promedio</li>
+                <li>Competitividad, stock, Full / Flex, B2B, Ads</li>
+                <li>KPIs customizados y personalizados por caso de negocio de cada seller</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-cta-wrap">
+          <p>¿Quieres profundizar en cada atributo principal?</p>
+          <button class="btn-detail" id="goDetail">Leer comparativo en detalle</button>
+        </div>
+      </div>
+
+      <!-- VIEW: Detalle (slides 6-9 v3) — paragraph + bullets por celda -->
+      <div class="modal-view active" id="viewDetail">
+        <h3 style="font-size:20px; color:#2D3277; margin-bottom: 8px; font-weight: 800;">
+          Detalle de los 5 atributos principales
+        </h3>
+        <p style="font-size:14px; color:var(--ml-text-muted); margin-bottom: 28px;">
+          Profundización de cada atributo de valor para los tres modelos de asesoría.
+        </p>
+
+        <!-- 1. Especialización -->
+        <div class="detail-section">
+          <div class="detail-section-head">
+            <h4>Especialización del asesor y cartera</h4>
+            <small>Seniority del asesor · tamaño de cartera · profundidad por seller</small>
+          </div>
+          <div class="detail-grid">
+            <div class="detail-cell">
+              <div class="tier-label">Esencial</div>
+              <div class="scope">Multicategoría · Analista Especializado</div>
+              <p>
+                Asesor generalista que cubre múltiples categorías en simultáneo. Con cartera muy
+                amplia, detecta alertas y oportunidades estándar pero no tiene visión estratégica
+                profunda de tu vertical ni de tu industria.
+              </p>
+              <ul class="attr-bullets" style="margin-top: 12px;">
+                <li>Analista Especializado multicategoría</li>
+                <li>Cartera muy amplia</li>
+              </ul>
+            </div>
+            <div class="detail-cell">
+              <div class="tier-label">Impacto</div>
+              <div class="scope">Especialización por categoría · Analista Especializado</div>
+              <p>
+                Asesor con foco exclusivo en tu categoría y cartera acotada. Conoce la dinámica
+                de tu vertical, anticipa movimientos del mercado y entrega dirección táctica
+                concreta basada en el contexto real de tu negocio.
+              </p>
+              <ul class="attr-bullets" style="margin-top: 12px;">
+                <li>Analista Especializado por categoría</li>
+                <li>Cartera acotada</li>
+              </ul>
+            </div>
+            <div class="detail-cell featured">
+              <div class="tier-label">Meli Pro</div>
+              <div class="scope">Equipo senior (asesor, subgerente y gerente) especialista en la categoría</div>
+              <p>
+                Equipo senior cuyo asesor maneja una cartera muy reducida e invierte varias horas
+                semanales en tu negocio. Conoce tu marca en profundidad, accede a data interna de
+                MeLi y co-crea tu planificación anual. Diferencial clave: no solo especialización,
+                sino nivel estratégico del acompañamiento, relación cercana y presencial.
+              </p>
+              <ul class="attr-bullets" style="margin-top: 12px;">
+                <li class="check">Equipo senior: asesor, subgerente y gerente</li>
+                <li class="check">Especialización por categoría</li>
+                <li>Cartera muy reducida</li>
+                <li>Relación cercana entre partes, con visitas a oficinas del seller</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Plan de Trabajo -->
+        <div class="detail-section">
+          <div class="detail-section-head">
+            <h4>Plan de Trabajo</h4>
+            <small>Tipo de plan, frecuencia de revisión y profundidad estratégica</small>
+          </div>
+          <div class="detail-grid">
+            <div class="detail-cell">
+              <div class="tier-label">Esencial</div>
+              <div class="scope">Diagnóstico inicial estándar</div>
+              <p>
+                Al inicio, el asesor realiza un diagnóstico estándar de la cuenta y define
+                objetivos básicos. No existe un plan de trabajo actualizado periódicamente ni
+                seguimiento formal. El seller gestiona su ejecución de forma autónoma entre
+                contactos con el asesor.
+              </p>
+              <ul class="attr-bullets" style="margin-top: 12px;">
+                <li class="dim">Sólo gestión ante oportunidades y alertas de la cuenta</li>
+              </ul>
+            </div>
+            <div class="detail-cell">
+              <div class="tier-label">Impacto</div>
+              <div class="scope">Plan de ventas de alto nivel</div>
+              <p>
+                Se construye un plan trimestral con palancas tácticas priorizadas (catálogo,
+                logística, campañas, ads). El asesor hace seguimiento quincenal del avance y
+                ajusta el plan según el contexto. El foco es ejecutar rápido y mejorar métricas
+                clave dentro del trimestre.
+              </p>
+              <ul class="attr-bullets" style="margin-top: 12px;">
+                <li>Plan trimestral de ventas sin detalle, seguimiento quincenal</li>
+                <li>Diagnóstico estandarizado no customizado</li>
+              </ul>
+            </div>
+            <div class="detail-cell featured">
+              <div class="tier-label">Meli Pro</div>
+              <div class="scope">Estrategia profunda conjunta anual</div>
+              <p>
+                Se construye un plan anual alineado con los objetivos del seller (con revisión
+                mensual), incluyendo benchmarks competitivos y proyecciones de venta (alta inversión
+                en tiempo de análisis). Seguimiento semanal de accionables y coordinación con
+                Logística, Publicidad y CX (gestión de problemas).
+              </p>
+              <ul class="attr-bullets" style="margin-top: 12px;">
+                <li class="check">Plan anual y estrategia conjunta con la marca, seguimiento semanal</li>
+                <li class="check">Diagnóstico interno completo + benchmarks de la industria y posición competitiva</li>
+                <li>Foco en adopción del ecosistema Meli con accionables customizados para el seller</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Palancas Comerciales -->
+        <div class="detail-section">
+          <div class="detail-section-head">
+            <h4>Palancas Comerciales</h4>
+            <small>Acceso a campañas, visibilidad, medios y apoyo comercial</small>
+          </div>
+          <div class="detail-grid">
+            <div class="detail-cell">
+              <div class="tier-label">Esencial</div>
+              <div class="scope">Acceso básico a campañas</div>
+              <p>
+                El asesor gestiona la inscripción del seller en campañas estándar (Cyber, Fechas
+                Dobles, etc.) con cupos básicos disponibles para todos. No hay priorización ni
+                gestión de medios adicionales. El seller accede a la visibilidad general del
+                evento sin diferenciación frente a otros sellers.
+              </p>
+              <ul class="attr-bullets" style="margin-top: 12px;">
+                <li>Cupos en campañas sin diferenciación</li>
+              </ul>
+            </div>
+            <div class="detail-cell">
+              <div class="tier-label">Impacto</div>
+              <div class="scope">Palancas tácticas activadas</div>
+              <p>
+                El asesor gestiona activamente la inscripción y negocia cupos con mayor volumen.
+                El seller accede a posicionamiento priorizado en búsqueda y aparece en acciones
+                de push y mailing. Facilita acceso a medios digitales básicos (RRSS, TV) cuando
+                están disponibles.
+              </p>
+              <ul class="attr-bullets" style="margin-top: 12px;">
+                <li>Cupos prioritarios en campañas</li>
+                <li>Prioridad de posicionamiento</li>
+                <li>Visibilidad en campañas · push y mailing</li>
+              </ul>
+            </div>
+            <div class="detail-cell featured">
+              <div class="tier-label">Meli Pro</div>
+              <div class="scope">Palancas tácticas exclusivas</div>
+              <p>
+                El equipo gestiona participación en los espacios de mayor visibilidad del
+                ecosistema (Cyber, Black, Navidad, otros). Puede optar a gráficas exclusivas en
+                RRSS y TV, apoyo comercial intensivo en campañas importantes y estrategia
+                personalizada por campaña. Diferencial vs. Impacto: exclusividad y apoyo intenso.
+              </p>
+              <ul class="attr-bullets" style="margin-top: 12px;">
+                <li class="check">Cupos exclusivos en campañas</li>
+                <li class="check">Prioridad en posicionamiento</li>
+                <li>Espacios de máxima prioridad para eventos clave (Black, Cyber, etc.) con push y mailing</li>
+                <li>Gráficas / medios exclusivos y posibilidad de RRSS</li>
+                <li>Apoyo intenso en campañas comerciales</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Pilotos y Lanzamientos -->
+        <div class="detail-section">
+          <div class="detail-section-head">
+            <h4>Pilotos y Lanzamientos</h4>
+            <small>Heavy &amp; Bulky · B2B · nuevas categorías · campañas no-prioritarias</small>
+          </div>
+          <div class="detail-grid">
+            <div class="detail-cell">
+              <div class="tier-label">Esencial</div>
+              <div class="scope">Sin acceso a pilotos</div>
+              <p>
+                Los sellers Esencial no tienen acceso a programas piloto ni a lanzamientos
+                estratégicos del ecosistema. No hay sesiones dedicadas a explorar nuevas
+                categorías, canales o modelos de negocio. El asesor no tiene capacidad de incluir
+                al seller en iniciativas experimentales de MeLi.
+              </p>
+              <ul class="attr-bullets" style="margin-top: 12px;">
+                <li class="dim">Sin prioridad</li>
+              </ul>
+            </div>
+            <div class="detail-cell">
+              <div class="tier-label">Impacto</div>
+              <div class="scope">Segunda prioridad en activación</div>
+              <p>
+                El asesor puede compartir información general sobre iniciativas estratégicas
+                (Heavy &amp; Bulky, B2B, nuevas categorías) pero sin priorización formal del seller
+                dentro de estos programas. El seller conoce las oportunidades y puede tener
+                acompañamiento, pero solo cuando el piloto ya escala y está en una fase más
+                tardía o avanzada.
+              </p>
+              <ul class="attr-bullets" style="margin-top: 12px;">
+                <li>Sesiones introductorias de contenido general</li>
+                <li>Segunda prioridad en activación de pilotos: Heavy &amp; Bulky, B2B, etc.</li>
+                <li>Late access</li>
+              </ul>
+            </div>
+            <div class="detail-cell featured">
+              <div class="tier-label">Meli Pro</div>
+              <div class="scope">Priorización activa en pilotos clave</div>
+              <p>
+                El asesor trabaja activamente para incluir al seller en los pilotos estratégicos
+                de MeLi. Gestiona la participación en campañas con opt-in activo y facilita
+                acceso a data analítica interna equivalente a Nubimetrics. El seller no espera
+                oportunidades: el asesor las busca y gestiona proactivamente. Existe proactividad
+                por parte de Meli para proponer desarrollo de marcas, categorías y productos,
+                siempre pensando en escalar las ventas del seller. Además, se realizan análisis
+                competitivos y de posicionamiento en conjunto con el seller.
+              </p>
+              <ul class="attr-bullets" style="margin-top: 12px;">
+                <li class="check">Sesiones profundas con detalle customizado</li>
+                <li class="check">Prioridad en nuevas funcionalidades y pilotos (Envíos Pesados, Fulfillment, etc.) con feedback de sellers para mejora de producto</li>
+                <li>Apertura de nuevas categorías con data ad-hoc para el seller</li>
+                <li>Revisión de posición competitiva</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Gestión de Problemas y CX -->
+        <div class="detail-section">
+          <div class="detail-section-head">
+            <h4>Gestión de Problemas y CX</h4>
+            <small>Monitoreo de reputación · escalamiento de casos · recuperación de venta</small>
+          </div>
+          <div class="detail-grid">
+            <div class="detail-cell">
+              <div class="tier-label">Esencial</div>
+              <div class="scope">Gestión 100% a cargo del seller</div>
+              <p>
+                El seller gestiona de forma completamente autónoma reclamos, devoluciones y
+                reputación de la cuenta. El asesor puede alertar ante una caída en reputación,
+                pero no tiene capacidad de escalar casos ni gestionar resoluciones activamente.
+                El riesgo reputacional recae 100% en el seller.
+              </p>
+              <ul class="attr-bullets" style="margin-top: 12px;">
+                <li>Gestión 100% del seller</li>
+                <li class="dim">Sin escalamiento de casos</li>
+              </ul>
+            </div>
+            <div class="detail-cell">
+              <div class="tier-label">Impacto</div>
+              <div class="scope">Apoyo puntual en situaciones críticas</div>
+              <p>
+                El asesor puede intervenir puntualmente en situaciones críticas (hasta 2 por mes):
+                alertar sobre deterioro de reputación, orientar al seller en casos complejos y
+                escalar a equipos internos cuando la magnitud lo requiere. El seller sigue siendo
+                el responsable principal de la gestión diaria.
+              </p>
+              <ul class="attr-bullets" style="margin-top: 12px;">
+                <li>Gestión del seller, apoyo puntual del asesor</li>
+                <li>Escalamiento de casos ad-hoc con máximo 2 mensuales</li>
+              </ul>
+            </div>
+            <div class="detail-cell featured">
+              <div class="tier-label">Meli Pro</div>
+              <div class="scope">Monitoreo activo + escalamiento prioritario</div>
+              <p>
+                El asesor monitorea activamente reputación e indicadores CX (tasa de reclamos,
+                calificaciones, devoluciones). Ante situaciones críticas, escala directamente con
+                prioridad a CX interno. Identifica y trabaja oportunidades de recuperación de
+                venta perdida por problemas de experiencia de compra y des-pausamiento de
+                publicaciones. Existe involucramiento de todo el equipo de Meli Pro para la
+                solución de problemas serios, y la suma de casos escala hacia soluciones de
+                ecosistema que permean a otras asesorías.
+              </p>
+              <ul class="attr-bullets" style="margin-top: 12px;">
+                <li class="check">Gestión del seller, apoyo activo del asesor</li>
+                <li class="check">Escalamiento y seguimiento de casos constante, sin límite mensual</li>
+                <li>Problemas serios: involucramiento de todo el equipo de Meli Pro (subgerente y gerente)</li>
+                <li>Suma de casos Meli Pro se escala para soluciones de ecosistema</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ===== FAQ ===== -->
+<section id="faq" style="background: var(--ml-bg-soft);">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-eyebrow">Preguntas frecuentes</div>
+      <h2 class="section-title">Todo lo que necesitas saber</h2>
+      <p class="section-subtitle">
+        Resolvemos las dudas más comunes sobre los programas de asesoría.
+      </p>
+    </div>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q">¿Cómo sé qué nivel de asesoría me corresponde?</div>
+        <div class="faq-a">
+          El criterio principal es tu NMV mensual. Si vendes hasta S/ 5,000 al mes el nivel adecuado es Esencial,
+          si vendes de S/ 5,000 a S/ 150,000 al mes el nivel adecuado es Impacto, y más de S/ 150,000 es Meli Pro. La evaluación se hace trimestralmente y el traspaso
+          puede ser ascendente (si tu negocio crece) o descendente (si la caída es sostenida).
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">¿Cuánto dura el servicio?</div>
+        <div class="faq-a">
+          La contratación se estructura en períodos trimestrales para que vivas un ciclo completo de eventos
+          en MercadoLibre (campañas, fechas clave). Es renovable al finalizar.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">¿Cuándo y cómo se refleja el cobro?</div>
+        <div class="faq-a">
+          El cobro es mensual, a mes vencido, vía MercadoPago bajo el concepto
+          "Cargo por Asesoría Comercial (CPAC)".
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">¿Sustituye a las agencias consultoras?</div>
+        <div class="faq-a">
+          No. Son servicios complementarios. Las asesorías son el músculo interno dentro de MercadoLibre,
+          mientras que las agencias son partners externos. Pueden convivir perfectamente.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Si tengo varias cuentas, ¿el asesor las cubre todas?</div>
+        <div class="faq-a">
+          El cobro es por cuenta. Cada asesor tiene un máximo definido de cuentas, por lo que para volúmenes
+          mayores se negocia el proporcional de tiempo requerido en una propuesta a medida.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">¿Podría tener un asesor exclusivo?</div>
+        <div class="faq-a">
+          Sí. Si la complejidad operativa lo amerita, podemos estructurar una propuesta de recurso 100%
+          dedicado a tu negocio.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">¿El asesor tiene acceso a mi cuenta de vendedor?</div>
+        <div class="faq-a">
+          No. Solo tú, como vendedor, puedes gestionar tu propia cuenta. El asesor te orienta y prioriza
+          accionables, pero la operación sigue 100% en tus manos.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== VIDEO TESTIMONIALS ===== -->
+<section class="videos-section">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-eyebrow">Voces de sellers</div>
+      <h2 class="section-title">Historias en video</h2>
+      <p class="section-subtitle">
+        Sellers de distintas categorías cuentan cómo trabajaron con sus asesores para escalar su negocio en Mercado Libre.
+      </p>
+    </div>
+    <div class="video-grid">
+      <div class="video-card">
+        <div class="video-thumb t1"></div>
+        <div class="video-placeholder-tag">Placeholder</div>
+        <div class="video-play" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"></path></svg>
+        </div>
+        <div class="video-meta">
+          <div class="video-name">Seller 1</div>
+          <div class="video-role">Categoría · video pendiente</div>
+        </div>
+      </div>
+      <div class="video-card">
+        <div class="video-thumb t2"></div>
+        <div class="video-placeholder-tag">Placeholder</div>
+        <div class="video-play" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"></path></svg>
+        </div>
+        <div class="video-meta">
+          <div class="video-name">Seller 2</div>
+          <div class="video-role">Categoría · video pendiente</div>
+        </div>
+      </div>
+      <div class="video-card">
+        <div class="video-thumb t3"></div>
+        <div class="video-placeholder-tag">Placeholder</div>
+        <div class="video-play" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"></path></svg>
+        </div>
+        <div class="video-meta">
+          <div class="video-name">Seller 3</div>
+          <div class="video-role">Categoría · video pendiente</div>
+        </div>
+      </div>
+      <div class="video-card">
+        <div class="video-thumb t4"></div>
+        <div class="video-placeholder-tag">Placeholder</div>
+        <div class="video-play" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"></path></svg>
+        </div>
+        <div class="video-meta">
+          <div class="video-name">Seller 4</div>
+          <div class="video-role">Categoría · video pendiente</div>
+        </div>
+      </div>
+      <div class="video-card">
+        <div class="video-thumb t5"></div>
+        <div class="video-placeholder-tag">Placeholder</div>
+        <div class="video-play" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"></path></svg>
+        </div>
+        <div class="video-meta">
+          <div class="video-name">Seller 5</div>
+          <div class="video-role">Categoría · video pendiente</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA FINAL ===== -->
+<section class="cta-final" id="contacto">
+  <div class="container">
+    <h2>Da el siguiente paso con Mercado Libre.</h2>
+    <p>Habla con un asesor y descubre el nivel adecuado para tu negocio.</p>
+    <a href="#" class="btn btn-yellow">Quiero hablar con un asesor</a>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="logo" style="color: white; margin-bottom: 16px;">Mercado <span style="color: var(--ml-yellow);">Libre</span> · Asesorías</div>
+        <p style="line-height: 1.6;">
+          Tres niveles de asesoría comercial diseñados para acompañar a cada vendedor
+          en su etapa de crecimiento dentro de MercadoLibre Perú.
+        </p>
+      </div>
+      <div>
+        <h4>Programas</h4>
+        <ul>
+          <li><a href="#niveles">Esencial</a></li>
+          <li><a href="#niveles">Impacto</a></li>
+          <li><a href="#niveles">Meli Pro</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Recursos</h4>
+        <ul>
+          <li><a href="#como-funciona">Cómo funciona</a></li>
+          <li><a href="#beneficios">Beneficios</a></li>
+          <li><a href="#comparativo">Comparativo</a></li>
+          <li><a href="#faq">Preguntas frecuentes</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="#contacto">Habla con un asesor</a></li>
+          <li><a href="https://vendedores.mercadolibre.cl">Centro de Vendedores</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-disclaimer">
+      Estos programas no sustituyen el canal de atención al cliente · No incluyen gestión de reclamos ·
+      No incluyen publicidad dentro del sitio.
+    </div>
+    <div class="footer-bottom">
+      © 2026 MercadoLibre Perú · Programa de asesoramiento para vendedores
+    </div>
+  </div>
+</footer>
+
+<script>
+  // FAQ accordion
+  document.querySelectorAll('.faq-q').forEach(q => {
+    q.addEventListener('click', () => {
+      q.parentElement.classList.toggle('open');
+    });
+  });
+
+  // Modal logic — single-view (detail). Static content only, no user input rendered, so no XSS surface.
+  const modal = document.getElementById('compareModal');
+  const openBtn = document.getElementById('openCompareModal');
+  const closeBtn = document.getElementById('closeModal');
+  const modalBody = document.querySelector('.modal-body');
+
+  function openModal() {
+    modal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    if (modalBody) modalBody.scrollTop = 0;
+  }
+  function closeModal() {
+    modal.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  if (openBtn) openBtn.addEventListener('click', openModal);
+  if (closeBtn) closeBtn.addEventListener('click', closeModal);
+
+  // Click on overlay to close
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) closeModal();
+  });
+
+  // ESC to close
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('open')) closeModal();
+  });
+</script>
+
+<script>
+/* Grid: only allow approved Grid domains to open unsandboxed tabs */
+(function(){
+  var allowedHosts = ["figma.com", "www.figma.com", "furydocs.io", "zeroheight.com", "google.com", "docs.google.com", "meet.google.com", "grid.adminml.com", "grid-artifacts.adminml.com", "mercadolibre.atlassian.net", "mercadolibre-opsgenie.atlassian.net", "app.datadoghq.com", "grafana-service.furycloud.io", "web.furycloud.io", "nasdaq-meli.app.opsgenie.com", "meli.enterprise.slack.com"];
+  var allowedSuffixes = [".adminml.com", ".atlassian.net", ".google.com", ".furycloud.io", ".melioffice.com", ".melisystems.com"];
+  var allowedPathPrefixes = {"github.com": ["/melisource/"], "www.github.com": ["/melisource/"]};
+  function normalizeUrl(rawUrl){
+    try {
+      return new URL(String(rawUrl || ""), window.location.href);
+    } catch (_err) {
+      return null;
+    }
+  }
+  function isAllowedUrl(rawUrl){
+    var parsed = normalizeUrl(rawUrl);
+    if(!parsed) return false;
+    if(parsed.protocol === "slack:") return true;
+    if(parsed.protocol !== "https:") return false;
+    var h = (parsed.hostname || "").toLowerCase();
+    if(!h) return false;
+    if(allowedHosts.indexOf(h) !== -1) return true;
+    for(var i = 0; i < allowedSuffixes.length; i++){
+      var s = allowedSuffixes[i];
+      if(h === s.slice(1) || (h.length > s.length && h.slice(-s.length) === s)) return true;
+    }
+    var pathPrefixes = allowedPathPrefixes[h];
+    if(pathPrefixes){
+      var p = parsed.pathname || "/";
+      for(var j = 0; j < pathPrefixes.length; j++){
+        if(p.slice(0, pathPrefixes[j].length) === pathPrefixes[j]) return true;
+      }
+    }
+    return false;
+  }
+  function requestParentPopup(rawUrl){
+    var parsed = normalizeUrl(rawUrl);
+    if(!parsed || !window.parent || window.parent === window) return false;
+    try {
+      window.parent.postMessage({type: "grid-open-safe-popup", url: parsed.href}, window.location.origin);
+      return true;
+    } catch (_err) {
+      return false;
+    }
+  }
+
+  document.addEventListener("click", function(event){
+    var target = event.target;
+    var anchor = target && target.closest ? target.closest("a[href]") : null;
+    if(!anchor) return;
+    var href = anchor.getAttribute("href") || "";
+    if(!href || href.charAt(0) === "#") return;
+    var opensNewTab = anchor.target === "_blank" || event.ctrlKey || event.metaKey || event.button === 1;
+    if(!opensNewTab) return;
+    if(!isAllowedUrl(href)) {
+      event.preventDefault();
+      event.stopPropagation();
+      return;
+    }
+    if(requestParentPopup(href)) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
+  }, true);
+
+  var nativeOpen = window.open;
+  window.open = function(rawUrl, target, features){
+    if(!isAllowedUrl(rawUrl)) return null;
+    if(requestParentPopup(rawUrl)) return null;
+    return nativeOpen ? nativeOpen.call(window, normalizeUrl(rawUrl).href, target, features) : null;
+  };
+})();
+</script>
+<script>
+/* Grid: sync iframe URL mutations to parent address bar */
+(function(){
+  function notifyParent(search, hash){
+    if(!window.parent || window.parent === window) return;
+    try{
+      window.parent.postMessage(
+        {type:"grid-url-sync", search:search, hash:hash},
+        window.location.origin
+      );
+    }catch(_){}
+  }
+  function parseAndNotify(url){
+    try{
+      var p = new URL(String(url), window.location.href);
+      notifyParent(p.search, p.hash);
+    }catch(_){}
+  }
+  var _push = history.pushState.bind(history);
+  var _replace = history.replaceState.bind(history);
+  history.pushState = function(state, title, url){
+    _push(state, title, url);
+    if(url != null) parseAndNotify(url);
+  };
+  history.replaceState = function(state, title, url){
+    _replace(state, title, url);
+    if(url != null) parseAndNotify(url);
+  };
+  window.addEventListener("hashchange", function(){
+    notifyParent(window.location.search, window.location.hash);
+  });
+})();
+</script>
+
+
+</body></html>
